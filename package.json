@@ -1,0 +1,59 @@
+{
+  "name": "@snowui-design-system/resource-core",
+  "version": "1.0.7",
+  "description": "SnowUI Design Resource Core - Core assets and metadata for SnowUI design system",
+  "license": "MIT",
+  "private": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    "./assets/icons/regular/*.svg": "./assets/icons/regular/*.svg",
+    "./assets/icons/thin/*.svg": "./assets/icons/thin/*.svg",
+    "./assets/icons/light/*.svg": "./assets/icons/light/*.svg",
+    "./assets/icons/bold/*.svg": "./assets/icons/bold/*.svg",
+    "./assets/icons/fill/*.svg": "./assets/icons/fill/*.svg",
+    "./assets/icons/duotone/*.svg": "./assets/icons/duotone/*.svg",
+    "./assets/avatars/*": "./assets/avatars/*",
+    "./assets/backgrounds/*": "./assets/backgrounds/*",
+    "./assets/cursors/*": "./assets/cursors/*",
+    "./assets/emoji/*": "./assets/emoji/*",
+    "./assets/illustrations/*": "./assets/illustrations/*",
+    "./assets/images/*": "./assets/images/*",
+    "./assets/logos/*": "./assets/logos/*",
+    "./regular/*.svg": "./assets/icons/regular/*.svg",
+    "./thin/*.svg": "./assets/icons/thin/*.svg",
+    "./light/*.svg": "./assets/icons/light/*.svg",
+    "./bold/*.svg": "./assets/icons/bold/*.svg",
+    "./fill/*.svg": "./assets/icons/fill/*.svg",
+    "./duotone/*.svg": "./assets/icons/duotone/*.svg"
+  },
+  "files": [
+    "src",
+    "assets",
+    "README.md"
+  ],
+  "keywords": [
+    "snowui",
+    "icons",
+    "assets",
+    "design-system",
+    "svg",
+    "ui",
+    "ux"
+  ],
+  "scripts": {
+    "process": "tsx scripts/process-all.ts",
+    "process:icons": "tsx scripts/process-icons.ts",
+    "process:materials": "tsx scripts/process-materials.ts"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.0",
+    "svgo": "^3.0.0",
+    "tsx": "^4.7.0"
+  }
+}
