@@ -97,6 +97,95 @@ export async function compressImage(
 }
 
 /**
+ * 调整图片尺寸（正方形，宽高相同）
+ */
+export async function resizeImage(
+  inputPath: string,
+  width: number,
+  height: number,
+  outputPath?: string
+): Promise<Buffer> {
+  try {
+    const sharpModule = await import("sharp");
+    const sharp = (sharpModule.default || sharpModule) as typeof import("sharp").default;
+    
+    const ext = path.extname(inputPath).toLowerCase();
+    let processed = sharp(inputPath).resize(width, height, {
+      fit: 'cover', // 保持宽高比，裁剪超出部分
+      position: 'center',
+    });
+
+    if (ext === ".png") {
+      processed = processed.png({ compressionLevel: 9, adaptiveFiltering: true });
+    } else if (ext === ".jpg" || ext === ".jpeg") {
+      processed = processed.jpeg({ quality: 85, mozjpeg: true, progressive: true });
+    } else if (ext === ".webp") {
+      processed = processed.webp({ quality: 85 });
+    }
+
+    const buffer = await processed.toBuffer();
+    
+    if (outputPath) {
+      await fs.writeFile(outputPath, buffer);
+    }
+
+    return buffer;
+  } catch (error: any) {
+    if (error?.code === "MODULE_NOT_FOUND" || error?.message?.includes("Cannot find module")) {
+      console.error(`\n❌ [image] sharp is not installed! Please install it to enable image resizing:`);
+      console.error(`   pnpm add -D sharp`);
+    } else {
+      console.warn(`[image] Error resizing ${inputPath}: ${error?.message || error}`);
+    }
+    return await fs.readFile(inputPath);
+  }
+}
+
+/**
+ * 调整图片尺寸（宽度固定，高度自适应）
+ */
+export async function resizeImageByWidth(
+  inputPath: string,
+  width: number,
+  outputPath?: string
+): Promise<Buffer> {
+  try {
+    const sharpModule = await import("sharp");
+    const sharp = (sharpModule.default || sharpModule) as typeof import("sharp").default;
+    
+    const ext = path.extname(inputPath).toLowerCase();
+    let processed = sharp(inputPath).resize(width, null, {
+      fit: 'inside', // 保持宽高比，高度自适应
+      withoutEnlargement: true, // 不放大图片
+    });
+
+    if (ext === ".png") {
+      processed = processed.png({ compressionLevel: 9, adaptiveFiltering: true });
+    } else if (ext === ".jpg" || ext === ".jpeg") {
+      processed = processed.jpeg({ quality: 85, mozjpeg: true, progressive: true });
+    } else if (ext === ".webp") {
+      processed = processed.webp({ quality: 85 });
+    }
+
+    const buffer = await processed.toBuffer();
+    
+    if (outputPath) {
+      await fs.writeFile(outputPath, buffer);
+    }
+
+    return buffer;
+  } catch (error: any) {
+    if (error?.code === "MODULE_NOT_FOUND" || error?.message?.includes("Cannot find module")) {
+      console.error(`\n❌ [image] sharp is not installed! Please install it to enable image resizing:`);
+      console.error(`   pnpm add -D sharp`);
+    } else {
+      console.warn(`[image] Error resizing ${inputPath}: ${error?.message || error}`);
+    }
+    return await fs.readFile(inputPath);
+  }
+}
+
+/**
  * 处理位图文件的完整流程：读取 → 压缩 → 返回 Buffer
  */
 export async function processImageFile(inputPath: string): Promise<Buffer> {

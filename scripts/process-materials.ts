@@ -2,7 +2,7 @@ import * as path from "path";
 import { promises as fs } from "fs";
 import { listAssets, writeFile, ensureDir, resolvePath } from "./utils/fs";
 import { toNameVariants } from "./utils/naming";
-import { processImageFile, isBitmapFile } from "./utils/image";
+import { processImageFile, isBitmapFile, resizeImage, resizeImageByWidth } from "./utils/image";
 
 type MaterialGroup = string;
 
@@ -15,6 +15,16 @@ export interface ProcessMaterialsOptions {
   excludeGroups?: string[];
   /** 是否仅打印日志而不写入文件 */
   dryRun?: boolean;
+  /** 需要生成多种尺寸的素材类型（如 ['avatars']），正方形尺寸（仅位图） */
+  multiSizeGroups?: string[];
+  /** 要生成的尺寸列表（如 [64, 128, 256, 512]），正方形尺寸 */
+  sizes?: number[];
+  /** 需要生成多种宽度的素材类型（如 ['illustrations']），宽度固定，高度自适应（仅位图） */
+  multiWidthGroups?: string[];
+  /** 要生成的宽度列表（如 [80, 128, 256, 512]），宽度固定，高度自适应 */
+  widths?: number[];
+  /** 不同素材类型的宽度配置（覆盖全局 widths） */
+  widthConfigs?: Record<string, number[]>;
 }
 
 export interface MaterialOutputEntry {
@@ -23,7 +33,7 @@ export interface MaterialOutputEntry {
   kebab_name: string;
   pascal_name: string;
   alias?: { name: string; pascal_name: string };
-  files: { format: string; path: string }[];
+  files: { format: string; path: string; size?: number }[];
 }
 
 const ALLOWED_EXTS = [".svg", ".png", ".jpg", ".jpeg", ".webp"];
@@ -63,6 +73,47 @@ export async function processMaterials(options: ProcessMaterialsOptions = {}): P
         if (isBitmapFile(file.path)) {
           const compressedBuffer = await processImageFile(file.path);
           await writeFile(outAbs, compressedBuffer);
+          
+          // 如果该分组需要生成多种尺寸（正方形）
+          const multiSizeGroups = (options.multiSizeGroups ?? []).map(g => g.toLowerCase());
+          const sizes = options.sizes ?? [];
+          
+          if (multiSizeGroups.includes(group.toLowerCase())) {
+            for (const size of sizes) {
+              const sizeOutRel = `${group}/${variants.kebab}-${size}${file.ext}`;
+              const sizeOutAbs = path.join(baseAssetsDir, sizeOutRel);
+              await resizeImage(file.path, size, size, sizeOutAbs);
+              
+              // 也添加到元数据中
+              upsertMaterialEntry(resultsMap, group, variants, file.baseName, {
+                format: file.ext.slice(1),
+                path: sizeOutRel,
+                size, // 添加尺寸信息
+              });
+            }
+          }
+          
+          // 如果该分组需要生成多种宽度（宽度固定，高度自适应）
+          // 注意：只处理位图文件，SVG等非位图不进行尺寸处理
+          const multiWidthGroups = (options.multiWidthGroups ?? []).map(g => g.toLowerCase());
+          
+          if (multiWidthGroups.includes(group.toLowerCase())) {
+            // 优先使用分组特定的宽度配置，否则使用全局配置
+            const widths = options.widthConfigs?.[group.toLowerCase()] ?? options.widths ?? [];
+            
+            for (const width of widths) {
+              const widthOutRel = `${group}/${variants.kebab}-${width}${file.ext}`;
+              const widthOutAbs = path.join(baseAssetsDir, widthOutRel);
+              await resizeImageByWidth(file.path, width, widthOutAbs);
+              
+              // 也添加到元数据中
+              upsertMaterialEntry(resultsMap, group, variants, file.baseName, {
+                format: file.ext.slice(1),
+                path: widthOutRel,
+                size: width, // 使用 size 字段存储宽度
+              });
+            }
+          }
         } else {
           const content = await fs.readFile(file.path);
           await writeFile(outAbs, content);
@@ -70,6 +121,20 @@ export async function processMaterials(options: ProcessMaterialsOptions = {}): P
       } else {
         if (isBitmapFile(file.path)) {
           console.log(`   [dry-run] Would compress: ${file.path} → ${outRel}`);
+          const multiSizeGroups = (options.multiSizeGroups ?? []).map(g => g.toLowerCase());
+          const sizes = options.sizes ?? [];
+          if (multiSizeGroups.includes(group.toLowerCase())) {
+            for (const size of sizes) {
+              console.log(`   [dry-run] Would resize to ${size}x${size}: ${file.path} → ${group}/${variants.kebab}-${size}${file.ext}`);
+            }
+          }
+          const multiWidthGroups = (options.multiWidthGroups ?? []).map(g => g.toLowerCase());
+          if (multiWidthGroups.includes(group.toLowerCase())) {
+            const widths = options.widthConfigs?.[group.toLowerCase()] ?? options.widths ?? [];
+            for (const width of widths) {
+              console.log(`   [dry-run] Would resize to width ${width} (height auto): ${file.path} → ${group}/${variants.kebab}-${width}${file.ext}`);
+            }
+          }
         }
       }
 
@@ -116,7 +181,7 @@ function upsertMaterialEntry(
   type: string,
   variants: ReturnType<typeof toNameVariants>,
   originalName: string | undefined,
-  file: { format: string; path: string }
+  file: { format: string; path: string; size?: number }
 ): void {
   const key = getMaterialKey(type, variants.kebab);
   const existing = map.get(key);

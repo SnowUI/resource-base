@@ -28,9 +28,28 @@ async function main() {
 
   // 步骤 1: 处理 materials（排除 icons）
   console.log("📦 Step 1: Processing materials (avatars, backgrounds, cursors, etc.)");
-  console.log("   - Bitmap images (PNG, JPG, etc.): Compressing...");
-  console.log("   - SVG files: Copying as-is (no color processing)");
-  const materials = await processMaterials({ baseAssetsDir, dryRun, excludeGroups: ["icons"] });
+  console.log("   - Bitmap images (PNG, JPG, etc.): Compressing and generating multiple sizes...");
+  console.log("   - SVG files: Copying as-is (no color processing, no size variants)");
+  console.log("   - Avatars: Generating multiple sizes (16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512)...");
+  console.log("   - Backgrounds: Generating multiple widths (320, 640, 1024, 1920)...");
+  console.log("   - Images: Generating multiple widths (160, 320, 640, 1024)...");
+  console.log("   - Illustrations: Generating multiple widths (160, 320, 640, 1024)...");
+  const materials = await processMaterials({ 
+    baseAssetsDir, 
+    dryRun, 
+    excludeGroups: ["icons"],
+    // Avatars: 正方形尺寸，默认 32x32（仅位图）
+    multiSizeGroups: ["avatars"],
+    sizes: [16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512],
+    // Backgrounds, Images, Illustrations: 宽度固定，高度自适应（仅位图）
+    multiWidthGroups: ["backgrounds", "images", "illustrations"],
+    // 不同素材类型的宽度配置
+    widthConfigs: {
+      backgrounds: [320, 640, 1024, 1920],  // 默认 1024
+      images: [160, 320, 640, 1024],        // 默认 320
+      illustrations: [160, 320, 640, 1024],  // 默认 320（与 images 一致）
+    },
+  });
   console.log(`   ✅ Processed ${materials.length} material entries`);
   console.log("");
 
