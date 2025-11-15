@@ -6008,11 +6008,11 @@ export const assets = <const>[
   },
   {
     type: "logos",
-    name: "snow-icon",
-    pascal_name: "SnowIcon",
-    alias: { name: "SnowIcon", pascal_name: "SnowIcon" },
+    name: "snow-logo",
+    pascal_name: "SnowLogo",
+    alias: { name: "SnowLogo", pascal_name: "SnowLogo" },
     files: [
-      { format: "svg", path: "logos/snow-icon.svg" }
+      { format: "svg", path: "logos/snow-logo.svg" }
     ],
   },
   {
