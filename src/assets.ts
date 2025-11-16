@@ -4139,10 +4139,11 @@ export const assets = <const>[
   },
   {
     type: "emoji",
-    name: "robot",
-    pascal_name: "Robot",
+    name: "robot-emoji",
+    pascal_name: "RobotEmoji",
+    alias: { name: "RobotEmoji", pascal_name: "RobotEmoji" },
     files: [
-      { format: "svg", path: "emoji/robot.svg" }
+      { format: "svg", path: "emoji/robot-emoji.svg" }
     ],
   },
   {
@@ -4192,10 +4193,11 @@ export const assets = <const>[
   },
   {
     type: "emoji",
-    name: "snowflake",
-    pascal_name: "Snowflake",
+    name: "snowflake-emoji",
+    pascal_name: "SnowflakeEmoji",
+    alias: { name: "SnowflakeEmoji", pascal_name: "SnowflakeEmoji" },
     files: [
-      { format: "svg", path: "emoji/snowflake.svg" }
+      { format: "svg", path: "emoji/snowflake-emoji.svg" }
     ],
   },
   {
@@ -4208,10 +4210,11 @@ export const assets = <const>[
   },
   {
     type: "emoji",
-    name: "umbrella",
-    pascal_name: "Umbrella",
+    name: "umbrella-emoji",
+    pascal_name: "UmbrellaEmoji",
+    alias: { name: "UmbrellaEmoji", pascal_name: "UmbrellaEmoji" },
     files: [
-      { format: "svg", path: "emoji/umbrella.svg" }
+      { format: "svg", path: "emoji/umbrella-emoji.svg" }
     ],
   },
   {
@@ -5984,10 +5987,11 @@ export const assets = <const>[
   },
   {
     type: "logos",
-    name: "rss",
-    pascal_name: "Rss",
+    name: "rss-logo",
+    pascal_name: "RssLogo",
+    alias: { name: "RssLogo", pascal_name: "RssLogo" },
     files: [
-      { format: "svg", path: "logos/rss.svg" }
+      { format: "svg", path: "logos/rss-logo.svg" }
     ],
   },
   {
