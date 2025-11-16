@@ -1,10 +1,10 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_iiii_7214_3728)">
-<path d="M16 118.4C16 82.5566 16 64.635 22.9756 50.9446C29.1115 38.9022 38.9022 29.1115 50.9446 22.9756C64.635 16 82.5566 16 118.4 16H137.6C173.443 16 191.365 16 205.055 22.9756C217.098 29.1115 226.889 38.9022 233.024 50.9446C240 64.635 240 82.5566 240 118.4V137.6C240 173.443 240 191.365 233.024 205.055C226.889 217.098 217.098 226.889 205.055 233.024C191.365 240 173.443 240 137.6 240H118.4C82.5566 240 64.635 240 50.9446 233.024C38.9022 226.889 29.1115 217.098 22.9756 205.055C16 191.365 16 173.443 16 137.6V118.4Z" fill="black"/>
+<path d="M2 14.8C2 10.3196 2 8.07937 2.87195 6.36808C3.63893 4.86278 4.86278 3.63893 6.36808 2.87195C8.07937 2 10.3196 2 14.8 2H17.2C21.6804 2 23.9206 2 25.6319 2.87195C27.1372 3.63893 28.3611 4.86278 29.1281 6.36808C30 8.07937 30 10.3196 30 14.8V17.2C30 21.6804 30 23.9206 29.1281 25.6319C28.3611 27.1372 27.1372 28.3611 25.6319 29.1281C23.9206 30 21.6804 30 17.2 30H14.8C10.3196 30 8.07937 30 6.36808 29.1281C4.86278 28.3611 3.63893 27.1372 2.87195 25.6319C2 23.9206 2 21.6804 2 17.2V14.8Z" fill="black"/>
 </g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M76 128C76 121.373 81.3726 116 88 116H168C174.627 116 180 121.373 180 128C180 134.627 174.627 140 168 140H88C81.3726 140 76 134.627 76 128Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 16C9.5 15.1716 10.1716 14.5 11 14.5H21C21.8284 14.5 22.5 15.1716 22.5 16C22.5 16.8284 21.8284 17.5 21 17.5H11C10.1716 17.5 9.5 16.8284 9.5 16Z" fill="white"/>
 <defs>
-<filter id="filter0_iiii_7214_3728" x="16" y="15.5" width="225" height="226" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_iiii_7214_3728" x="2" y="1.5" width="29" height="30" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>

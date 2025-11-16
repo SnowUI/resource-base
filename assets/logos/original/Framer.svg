@@ -1,8 +1,8 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="128" cy="128" r="128" fill="#303030"/>
-<path d="M70.4 164.13H125.244V220.595L70.4 164.13Z" fill="white"/>
-<path d="M70.4 107.665H125.244V164.13H70.4V107.665Z" fill="white"/>
-<path d="M125.244 107.665L180.088 164.13H125.244V107.665Z" fill="white"/>
-<path d="M125.244 51.2002H180.088V107.665H125.244V51.2002Z" fill="white"/>
-<path d="M70.4 51.2002H125.244V107.665L70.4 51.2002Z" fill="white"/>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="16" cy="16" r="16" fill="#303030"/>
+<path d="M8.79999 20.5161H15.6555V27.5742L8.79999 20.5161Z" fill="white"/>
+<path d="M8.79999 13.458H15.6555V20.5161H8.79999V13.458Z" fill="white"/>
+<path d="M15.6555 13.458L22.511 20.5161H15.6555V13.458Z" fill="white"/>
+<path d="M15.6555 6.3999H22.511V13.458H15.6555V6.3999Z" fill="white"/>
+<path d="M8.79999 6.3999H15.6555V13.458L8.79999 6.3999Z" fill="white"/>
 </svg>
