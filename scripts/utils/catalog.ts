@@ -6,7 +6,37 @@ import type { IconOutputEntry } from "../process-icons";
 import type { MaterialOutputEntry } from "../process-materials";
 import type { IconEntry, AssetEntry, IconWeight } from "../../src/types";
 
+/**
+ * 图标标签数据
+ */
+interface IconTagData {
+  pascal_name: string;
+  tags: string[];
+}
+
 const ICON_WEIGHTS: IconWeight[] = ["regular", "thin", "light", "bold", "fill", "duotone"];
+
+/**
+ * 加载图标标签数据
+ */
+async function loadIconTags(baseDir: string): Promise<Map<string, string[]>> {
+  const tagsFilePath = path.join(baseDir, "src", "icon-tags.json");
+  const tagsMap = new Map<string, string[]>();
+
+  try {
+    const tagsData: IconTagData[] = JSON.parse(
+      await fs.readFile(tagsFilePath, "utf-8")
+    );
+    for (const item of tagsData) {
+      tagsMap.set(item.pascal_name, item.tags);
+    }
+    console.log(`📋 [catalog] Loaded ${tagsMap.size} icon tags from icon-tags.json`);
+  } catch (error) {
+    console.warn(`⚠️  [catalog] Failed to load icon-tags.json: ${error instanceof Error ? error.message : String(error)}`);
+  }
+
+  return tagsMap;
+}
 
 /**
  * 更新 catalog 文件（icons.ts 和 assets.ts）
@@ -21,6 +51,9 @@ export async function updateCatalog(options: {
 
   // 确保 src 目录存在
   await fs.mkdir(srcDir, { recursive: true });
+
+  // 加载图标标签数据
+  const tagsMap = await loadIconTags(baseDir);
 
   // 处理图标数据：按名称分组，收集所有权重
   const iconMap = new Map<string, IconEntry>();
@@ -38,6 +71,13 @@ export async function updateCatalog(options: {
           pascal_name: originalPascal,
         };
       }
+      // 如果现有条目还没有 tags，尝试添加
+      if (!existing.tags || existing.tags.length === 0) {
+        const tags = tagsMap.get(existing.pascal_name);
+        if (tags && tags.length > 0) {
+          existing.tags = tags;
+        }
+      }
     } else {
       const entry: IconEntry = {
         name: icon.kebab_name,
@@ -52,11 +92,16 @@ export async function updateCatalog(options: {
           pascal_name: originalPascal,
         };
       }
+      // 匹配并添加 tags
+      const tags = tagsMap.get(icon.pascal_name);
+      if (tags && tags.length > 0) {
+        entry.tags = tags;
+      }
       iconMap.set(icon.kebab_name, entry);
     }
   }
 
-  await hydrateIconsFromExistingAssets(iconMap, baseDir);
+  await hydrateIconsFromExistingAssets(iconMap, baseDir, tagsMap);
 
   // 转换为数组并排序
   const iconEntries: IconEntry[] = Array.from(iconMap.values()).sort((a, b) =>
@@ -103,7 +148,8 @@ function sortWeights(weights: IconWeight[]): IconWeight[] {
 
 async function hydrateIconsFromExistingAssets(
   iconMap: Map<string, IconEntry>,
-  baseDir: string
+  baseDir: string,
+  tagsMap: Map<string, string[]>
 ): Promise<void> {
   const iconsDir = path.join(baseDir, "assets", "icons");
 
@@ -128,13 +174,26 @@ async function hydrateIconsFromExistingAssets(
         if (!existing.weights.includes(weight)) {
           existing.weights.push(weight);
         }
+        // 如果现有条目还没有 tags，尝试添加
+        if (!existing.tags || existing.tags.length === 0) {
+          const tags = tagsMap.get(existing.pascal_name);
+          if (tags && tags.length > 0) {
+            existing.tags = tags;
+          }
+        }
       } else {
         const { pascal } = toNameVariants(kebab);
-        iconMap.set(kebab, {
+        const entry: IconEntry = {
           name: kebab,
           pascal_name: pascal,
           weights: [weight],
-        });
+        };
+        // 匹配并添加 tags
+        const tags = tagsMap.get(pascal);
+        if (tags && tags.length > 0) {
+          entry.tags = tags;
+        }
+        iconMap.set(kebab, entry);
       }
     }
   }
@@ -161,10 +220,13 @@ export const icons = <const>[
     const aliasStr = icon.alias
       ? `\n    alias: { name: "${icon.alias.name}", pascal_name: "${icon.alias.pascal_name}" },`
       : "";
+    const tagsStr = icon.tags && icon.tags.length > 0
+      ? `\n    tags: [${icon.tags.map((t) => `"${t.replace(/"/g, '\\"')}"`).join(", ")}],`
+      : "";
 
     content += `  {
     name: "${icon.name}",
-    pascal_name: "${icon.pascal_name}",${aliasStr}
+    pascal_name: "${icon.pascal_name}",${aliasStr}${tagsStr}
     weights: [${weightsStr}],
   },
 `;

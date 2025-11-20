@@ -18,6 +18,8 @@ export interface IconEntry {
   };
   /** 支持的权重列表 */
   weights: IconWeight[];
+  /** 标签列表（用于搜索和分类） */
+  tags?: string[];
 }
 
 /**
