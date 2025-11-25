@@ -1,7 +1,7 @@
 {
-  "name": "@snowui-design-system/resource-core",
-  "version": "1.0.22",
-  "description": "SnowUI Design Resource Core - Core assets and metadata for SnowUI design system",
+  "name": "@snowui-design-system/resource-base",
+  "version": "1.0.23",
+  "description": "SnowUI Design Resource Base - Used for handling design resources such as icons and avatars.",
   "license": "MIT",
   "private": false,
   "main": "./src/index.ts",

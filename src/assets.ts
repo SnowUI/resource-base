@@ -10,21 +10,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-3d-01",
     pascal_name: "Avatar3d01",
-    alias: { name: "Avatar3d01", pascal_name: "Avatar3d01" },
     files: [
-      { format: "jpg", path: "avatars/avatar-3d-01-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-01-512.jpg" },
       { format: "jpg", path: "avatars/avatar-3d-01.jpg" }
     ],
   },
@@ -136,21 +122,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-3d-02",
     pascal_name: "Avatar3d02",
-    alias: { name: "Avatar3d02", pascal_name: "Avatar3d02" },
     files: [
-      { format: "jpg", path: "avatars/avatar-3d-02-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-02-512.jpg" },
       { format: "jpg", path: "avatars/avatar-3d-02.jpg" }
     ],
   },
@@ -262,21 +234,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-3d-03",
     pascal_name: "Avatar3d03",
-    alias: { name: "Avatar3d03", pascal_name: "Avatar3d03" },
     files: [
-      { format: "jpg", path: "avatars/avatar-3d-03-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-03-512.jpg" },
       { format: "jpg", path: "avatars/avatar-3d-03.jpg" }
     ],
   },
@@ -388,21 +346,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-3d-04",
     pascal_name: "Avatar3d04",
-    alias: { name: "Avatar3d04", pascal_name: "Avatar3d04" },
     files: [
-      { format: "jpg", path: "avatars/avatar-3d-04-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-3d-04-512.jpg" },
       { format: "jpg", path: "avatars/avatar-3d-04.jpg" }
     ],
   },
@@ -514,21 +458,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-abstract-01",
     pascal_name: "AvatarAbstract01",
-    alias: { name: "AvatarAbstract01", pascal_name: "AvatarAbstract01" },
     files: [
-      { format: "jpg", path: "avatars/avatar-abstract-01-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-01-512.jpg" },
       { format: "jpg", path: "avatars/avatar-abstract-01.jpg" }
     ],
   },
@@ -640,21 +570,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-abstract-02",
     pascal_name: "AvatarAbstract02",
-    alias: { name: "AvatarAbstract02", pascal_name: "AvatarAbstract02" },
     files: [
-      { format: "jpg", path: "avatars/avatar-abstract-02-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-02-512.jpg" },
       { format: "jpg", path: "avatars/avatar-abstract-02.jpg" }
     ],
   },
@@ -766,21 +682,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-abstract-03",
     pascal_name: "AvatarAbstract03",
-    alias: { name: "AvatarAbstract03", pascal_name: "AvatarAbstract03" },
     files: [
-      { format: "jpg", path: "avatars/avatar-abstract-03-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-03-512.jpg" },
       { format: "jpg", path: "avatars/avatar-abstract-03.jpg" }
     ],
   },
@@ -892,21 +794,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-abstract-04",
     pascal_name: "AvatarAbstract04",
-    alias: { name: "AvatarAbstract04", pascal_name: "AvatarAbstract04" },
     files: [
-      { format: "jpg", path: "avatars/avatar-abstract-04-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-abstract-04-512.jpg" },
       { format: "jpg", path: "avatars/avatar-abstract-04.jpg" }
     ],
   },
@@ -1018,21 +906,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-byewind",
     pascal_name: "AvatarByewind",
-    alias: { name: "AvatarByewind", pascal_name: "AvatarByewind" },
     files: [
-      { format: "jpg", path: "avatars/avatar-byewind-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-byewind-512.jpg" },
       { format: "jpg", path: "avatars/avatar-byewind.jpg" }
     ],
   },
@@ -1144,21 +1018,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-default",
     pascal_name: "AvatarDefault",
-    alias: { name: "AvatarDefault", pascal_name: "AvatarDefault" },
     files: [
-      { format: "jpg", path: "avatars/avatar-default-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-default-512.jpg" },
       { format: "jpg", path: "avatars/avatar-default.jpg" }
     ],
   },
@@ -1270,21 +1130,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-female-01",
     pascal_name: "AvatarFemale01",
-    alias: { name: "AvatarFemale01", pascal_name: "AvatarFemale01" },
     files: [
-      { format: "jpg", path: "avatars/avatar-female-01-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-01-512.jpg" },
       { format: "jpg", path: "avatars/avatar-female-01.jpg" }
     ],
   },
@@ -1396,21 +1242,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-female-02",
     pascal_name: "AvatarFemale02",
-    alias: { name: "AvatarFemale02", pascal_name: "AvatarFemale02" },
     files: [
-      { format: "jpg", path: "avatars/avatar-female-02-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-02-512.jpg" },
       { format: "jpg", path: "avatars/avatar-female-02.jpg" }
     ],
   },
@@ -1522,21 +1354,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-female-03",
     pascal_name: "AvatarFemale03",
-    alias: { name: "AvatarFemale03", pascal_name: "AvatarFemale03" },
     files: [
-      { format: "jpg", path: "avatars/avatar-female-03-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-03-512.jpg" },
       { format: "jpg", path: "avatars/avatar-female-03.jpg" }
     ],
   },
@@ -1648,21 +1466,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-female-04",
     pascal_name: "AvatarFemale04",
-    alias: { name: "AvatarFemale04", pascal_name: "AvatarFemale04" },
     files: [
-      { format: "jpg", path: "avatars/avatar-female-04-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-04-512.jpg" },
       { format: "jpg", path: "avatars/avatar-female-04.jpg" }
     ],
   },
@@ -1774,21 +1578,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-female-05",
     pascal_name: "AvatarFemale05",
-    alias: { name: "AvatarFemale05", pascal_name: "AvatarFemale05" },
     files: [
-      { format: "jpg", path: "avatars/avatar-female-05-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-05-512.jpg" },
       { format: "jpg", path: "avatars/avatar-female-05.jpg" }
     ],
   },
@@ -1900,21 +1690,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-female-06",
     pascal_name: "AvatarFemale06",
-    alias: { name: "AvatarFemale06", pascal_name: "AvatarFemale06" },
     files: [
-      { format: "jpg", path: "avatars/avatar-female-06-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-female-06-512.jpg" },
       { format: "jpg", path: "avatars/avatar-female-06.jpg" }
     ],
   },
@@ -2026,21 +1802,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-male-01",
     pascal_name: "AvatarMale01",
-    alias: { name: "AvatarMale01", pascal_name: "AvatarMale01" },
     files: [
-      { format: "jpg", path: "avatars/avatar-male-01-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-01-512.jpg" },
       { format: "jpg", path: "avatars/avatar-male-01.jpg" }
     ],
   },
@@ -2152,21 +1914,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-male-02",
     pascal_name: "AvatarMale02",
-    alias: { name: "AvatarMale02", pascal_name: "AvatarMale02" },
     files: [
-      { format: "jpg", path: "avatars/avatar-male-02-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-02-512.jpg" },
       { format: "jpg", path: "avatars/avatar-male-02.jpg" }
     ],
   },
@@ -2278,21 +2026,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-male-03",
     pascal_name: "AvatarMale03",
-    alias: { name: "AvatarMale03", pascal_name: "AvatarMale03" },
     files: [
-      { format: "jpg", path: "avatars/avatar-male-03-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-03-512.jpg" },
       { format: "jpg", path: "avatars/avatar-male-03.jpg" }
     ],
   },
@@ -2404,21 +2138,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-male-04",
     pascal_name: "AvatarMale04",
-    alias: { name: "AvatarMale04", pascal_name: "AvatarMale04" },
     files: [
-      { format: "jpg", path: "avatars/avatar-male-04-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-04-512.jpg" },
       { format: "jpg", path: "avatars/avatar-male-04.jpg" }
     ],
   },
@@ -2530,21 +2250,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-male-05",
     pascal_name: "AvatarMale05",
-    alias: { name: "AvatarMale05", pascal_name: "AvatarMale05" },
     files: [
-      { format: "jpg", path: "avatars/avatar-male-05-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-05-512.jpg" },
       { format: "jpg", path: "avatars/avatar-male-05.jpg" }
     ],
   },
@@ -2656,21 +2362,7 @@ export const assets = <const>[
     type: "avatars",
     name: "avatar-male-06",
     pascal_name: "AvatarMale06",
-    alias: { name: "AvatarMale06", pascal_name: "AvatarMale06" },
     files: [
-      { format: "jpg", path: "avatars/avatar-male-06-16.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-20.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-24.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-28.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-32.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-40.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-48.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-56.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-64.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-80.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-128.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-256.jpg" },
-      { format: "jpg", path: "avatars/avatar-male-06-512.jpg" },
       { format: "jpg", path: "avatars/avatar-male-06.jpg" }
     ],
   },
@@ -2782,12 +2474,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "geometric-01",
     pascal_name: "Geometric01",
-    alias: { name: "Geometric01", pascal_name: "Geometric01" },
     files: [
-      { format: "jpg", path: "backgrounds/geometric-01-320.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-01-640.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-01-1024.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-01-1920.jpg" },
       { format: "jpg", path: "backgrounds/geometric-01.jpg" }
     ],
   },
@@ -2827,12 +2514,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "geometric-02",
     pascal_name: "Geometric02",
-    alias: { name: "Geometric02", pascal_name: "Geometric02" },
     files: [
-      { format: "jpg", path: "backgrounds/geometric-02-320.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-02-640.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-02-1024.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-02-1920.jpg" },
       { format: "jpg", path: "backgrounds/geometric-02.jpg" }
     ],
   },
@@ -2872,12 +2554,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "geometric-03",
     pascal_name: "Geometric03",
-    alias: { name: "Geometric03", pascal_name: "Geometric03" },
     files: [
-      { format: "jpg", path: "backgrounds/geometric-03-320.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-03-640.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-03-1024.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-03-1920.jpg" },
       { format: "jpg", path: "backgrounds/geometric-03.jpg" }
     ],
   },
@@ -2917,12 +2594,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "geometric-04",
     pascal_name: "Geometric04",
-    alias: { name: "Geometric04", pascal_name: "Geometric04" },
     files: [
-      { format: "jpg", path: "backgrounds/geometric-04-320.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-04-640.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-04-1024.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-04-1920.jpg" },
       { format: "jpg", path: "backgrounds/geometric-04.jpg" }
     ],
   },
@@ -2962,12 +2634,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "geometric-05",
     pascal_name: "Geometric05",
-    alias: { name: "Geometric05", pascal_name: "Geometric05" },
     files: [
-      { format: "jpg", path: "backgrounds/geometric-05-320.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-05-640.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-05-1024.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-05-1920.jpg" },
       { format: "jpg", path: "backgrounds/geometric-05.jpg" }
     ],
   },
@@ -3007,12 +2674,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "geometric-06",
     pascal_name: "Geometric06",
-    alias: { name: "Geometric06", pascal_name: "Geometric06" },
     files: [
-      { format: "jpg", path: "backgrounds/geometric-06-320.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-06-640.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-06-1024.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-06-1920.jpg" },
       { format: "jpg", path: "backgrounds/geometric-06.jpg" }
     ],
   },
@@ -3052,12 +2714,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "geometric-07",
     pascal_name: "Geometric07",
-    alias: { name: "Geometric07", pascal_name: "Geometric07" },
     files: [
-      { format: "jpg", path: "backgrounds/geometric-07-320.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-07-640.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-07-1024.jpg" },
-      { format: "jpg", path: "backgrounds/geometric-07-1920.jpg" },
       { format: "jpg", path: "backgrounds/geometric-07.jpg" }
     ],
   },
@@ -3097,12 +2754,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-01",
     pascal_name: "Gradient01",
-    alias: { name: "Gradient01", pascal_name: "Gradient01" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-01-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-01-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-01-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-01-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-01.jpg" }
     ],
   },
@@ -3142,12 +2794,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-02",
     pascal_name: "Gradient02",
-    alias: { name: "Gradient02", pascal_name: "Gradient02" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-02-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-02-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-02-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-02-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-02.jpg" }
     ],
   },
@@ -3187,12 +2834,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-03",
     pascal_name: "Gradient03",
-    alias: { name: "Gradient03", pascal_name: "Gradient03" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-03-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-03-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-03-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-03-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-03.jpg" }
     ],
   },
@@ -3232,12 +2874,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-04",
     pascal_name: "Gradient04",
-    alias: { name: "Gradient04", pascal_name: "Gradient04" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-04-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-04-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-04-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-04-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-04.jpg" }
     ],
   },
@@ -3277,12 +2914,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-05",
     pascal_name: "Gradient05",
-    alias: { name: "Gradient05", pascal_name: "Gradient05" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-05-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-05-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-05-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-05-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-05.jpg" }
     ],
   },
@@ -3322,12 +2954,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-06",
     pascal_name: "Gradient06",
-    alias: { name: "Gradient06", pascal_name: "Gradient06" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-06-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-06-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-06-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-06-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-06.jpg" }
     ],
   },
@@ -3367,12 +2994,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-07",
     pascal_name: "Gradient07",
-    alias: { name: "Gradient07", pascal_name: "Gradient07" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-07-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-07-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-07-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-07-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-07.jpg" }
     ],
   },
@@ -3412,12 +3034,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-08",
     pascal_name: "Gradient08",
-    alias: { name: "Gradient08", pascal_name: "Gradient08" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-08-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-08-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-08-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-08-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-08.jpg" }
     ],
   },
@@ -3457,12 +3074,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-09",
     pascal_name: "Gradient09",
-    alias: { name: "Gradient09", pascal_name: "Gradient09" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-09-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-09-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-09-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-09-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-09.jpg" }
     ],
   },
@@ -3502,12 +3114,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-10",
     pascal_name: "Gradient10",
-    alias: { name: "Gradient10", pascal_name: "Gradient10" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-10-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-10-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-10-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-10-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-10.jpg" }
     ],
   },
@@ -3547,12 +3154,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-11",
     pascal_name: "Gradient11",
-    alias: { name: "Gradient11", pascal_name: "Gradient11" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-11-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-11-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-11-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-11-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-11.jpg" }
     ],
   },
@@ -3592,12 +3194,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-12",
     pascal_name: "Gradient12",
-    alias: { name: "Gradient12", pascal_name: "Gradient12" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-12-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-12-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-12-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-12-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-12.jpg" }
     ],
   },
@@ -3637,12 +3234,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-13",
     pascal_name: "Gradient13",
-    alias: { name: "Gradient13", pascal_name: "Gradient13" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-13-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-13-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-13-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-13-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-13.jpg" }
     ],
   },
@@ -3682,12 +3274,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "gradient-14",
     pascal_name: "Gradient14",
-    alias: { name: "Gradient14", pascal_name: "Gradient14" },
     files: [
-      { format: "jpg", path: "backgrounds/gradient-14-320.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-14-640.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-14-1024.jpg" },
-      { format: "jpg", path: "backgrounds/gradient-14-1920.jpg" },
       { format: "jpg", path: "backgrounds/gradient-14.jpg" }
     ],
   },
@@ -3727,12 +3314,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "minimal-01",
     pascal_name: "Minimal01",
-    alias: { name: "Minimal01", pascal_name: "Minimal01" },
     files: [
-      { format: "jpg", path: "backgrounds/minimal-01-320.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-01-640.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-01-1024.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-01-1920.jpg" },
       { format: "jpg", path: "backgrounds/minimal-01.jpg" }
     ],
   },
@@ -3772,12 +3354,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "minimal-02",
     pascal_name: "Minimal02",
-    alias: { name: "Minimal02", pascal_name: "Minimal02" },
     files: [
-      { format: "jpg", path: "backgrounds/minimal-02-320.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-02-640.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-02-1024.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-02-1920.jpg" },
       { format: "jpg", path: "backgrounds/minimal-02.jpg" }
     ],
   },
@@ -3817,12 +3394,7 @@ export const assets = <const>[
     type: "backgrounds",
     name: "minimal-03",
     pascal_name: "Minimal03",
-    alias: { name: "Minimal03", pascal_name: "Minimal03" },
     files: [
-      { format: "jpg", path: "backgrounds/minimal-03-320.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-03-640.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-03-1024.jpg" },
-      { format: "jpg", path: "backgrounds/minimal-03-1920.jpg" },
       { format: "jpg", path: "backgrounds/minimal-03.jpg" }
     ],
   },
@@ -3862,7 +3434,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-beachball",
     pascal_name: "CursorsBeachball",
-    alias: { name: "CursorsBeachball", pascal_name: "CursorsBeachball" },
     files: [
       { format: "svg", path: "cursors/cursors-beachball.svg" }
     ],
@@ -3871,7 +3442,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-cross",
     pascal_name: "CursorsCross",
-    alias: { name: "CursorsCross", pascal_name: "CursorsCross" },
     files: [
       { format: "svg", path: "cursors/cursors-cross.svg" }
     ],
@@ -3880,7 +3450,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-default",
     pascal_name: "CursorsDefault",
-    alias: { name: "CursorsDefault", pascal_name: "CursorsDefault" },
     files: [
       { format: "svg", path: "cursors/cursors-default.svg" }
     ],
@@ -3889,7 +3458,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-hand-grabbing",
     pascal_name: "CursorsHandGrabbing",
-    alias: { name: "CursorsHandGrabbing", pascal_name: "CursorsHandGrabbing" },
     files: [
       { format: "svg", path: "cursors/cursors-hand-grabbing.svg" }
     ],
@@ -3898,7 +3466,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-hand-open",
     pascal_name: "CursorsHandOpen",
-    alias: { name: "CursorsHandOpen", pascal_name: "CursorsHandOpen" },
     files: [
       { format: "svg", path: "cursors/cursors-hand-open.svg" }
     ],
@@ -3907,7 +3474,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-hand-pointing",
     pascal_name: "CursorsHandPointing",
-    alias: { name: "CursorsHandPointing", pascal_name: "CursorsHandPointing" },
     files: [
       { format: "svg", path: "cursors/cursors-hand-pointing.svg" }
     ],
@@ -3916,7 +3482,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-menu",
     pascal_name: "CursorsMenu",
-    alias: { name: "CursorsMenu", pascal_name: "CursorsMenu" },
     files: [
       { format: "svg", path: "cursors/cursors-menu.svg" }
     ],
@@ -3925,7 +3490,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-move",
     pascal_name: "CursorsMove",
-    alias: { name: "CursorsMove", pascal_name: "CursorsMove" },
     files: [
       { format: "svg", path: "cursors/cursors-move.svg" }
     ],
@@ -3934,7 +3498,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-down",
     pascal_name: "CursorsResizeDown",
-    alias: { name: "CursorsResizeDown", pascal_name: "CursorsResizeDown" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-down.svg" }
     ],
@@ -3943,7 +3506,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-left",
     pascal_name: "CursorsResizeLeft",
-    alias: { name: "CursorsResizeLeft", pascal_name: "CursorsResizeLeft" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-left.svg" }
     ],
@@ -3952,7 +3514,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-left-right",
     pascal_name: "CursorsResizeLeftRight",
-    alias: { name: "CursorsResizeLeftRight", pascal_name: "CursorsResizeLeftRight" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-left-right.svg" }
     ],
@@ -3961,7 +3522,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-north-east-south-west",
     pascal_name: "CursorsResizeNorthEastSouthWest",
-    alias: { name: "CursorsResizeNorthEastSouthWest", pascal_name: "CursorsResizeNorthEastSouthWest" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-north-east-south-west.svg" }
     ],
@@ -3970,7 +3530,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-north-south",
     pascal_name: "CursorsResizeNorthSouth",
-    alias: { name: "CursorsResizeNorthSouth", pascal_name: "CursorsResizeNorthSouth" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-north-south.svg" }
     ],
@@ -3979,7 +3538,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-north-west-south-east",
     pascal_name: "CursorsResizeNorthWestSouthEast",
-    alias: { name: "CursorsResizeNorthWestSouthEast", pascal_name: "CursorsResizeNorthWestSouthEast" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-north-west-south-east.svg" }
     ],
@@ -3988,7 +3546,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-right",
     pascal_name: "CursorsResizeRight",
-    alias: { name: "CursorsResizeRight", pascal_name: "CursorsResizeRight" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-right.svg" }
     ],
@@ -3997,7 +3554,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-up",
     pascal_name: "CursorsResizeUp",
-    alias: { name: "CursorsResizeUp", pascal_name: "CursorsResizeUp" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-up.svg" }
     ],
@@ -4006,7 +3562,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-up-down",
     pascal_name: "CursorsResizeUpDown",
-    alias: { name: "CursorsResizeUpDown", pascal_name: "CursorsResizeUpDown" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-up-down.svg" }
     ],
@@ -4015,7 +3570,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-resize-west-east",
     pascal_name: "CursorsResizeWestEast",
-    alias: { name: "CursorsResizeWestEast", pascal_name: "CursorsResizeWestEast" },
     files: [
       { format: "svg", path: "cursors/cursors-resize-west-east.svg" }
     ],
@@ -4024,7 +3578,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-text-cursor",
     pascal_name: "CursorsTextCursor",
-    alias: { name: "CursorsTextCursor", pascal_name: "CursorsTextCursor" },
     files: [
       { format: "svg", path: "cursors/cursors-text-cursor.svg" }
     ],
@@ -4033,7 +3586,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-zoom-in",
     pascal_name: "CursorsZoomIn",
-    alias: { name: "CursorsZoomIn", pascal_name: "CursorsZoomIn" },
     files: [
       { format: "svg", path: "cursors/cursors-zoom-in.svg" }
     ],
@@ -4042,7 +3594,6 @@ export const assets = <const>[
     type: "cursors",
     name: "cursors-zoom-out",
     pascal_name: "CursorsZoomOut",
-    alias: { name: "CursorsZoomOut", pascal_name: "CursorsZoomOut" },
     files: [
       { format: "svg", path: "cursors/cursors-zoom-out.svg" }
     ],
@@ -4051,7 +3602,6 @@ export const assets = <const>[
     type: "emoji",
     name: "bomb-emoji",
     pascal_name: "BombEmoji",
-    alias: { name: "BombEmoji", pascal_name: "BombEmoji" },
     files: [
       { format: "svg", path: "emoji/bomb-emoji.svg" }
     ],
@@ -4060,7 +3610,6 @@ export const assets = <const>[
     type: "emoji",
     name: "face-blowing-kiss",
     pascal_name: "FaceBlowingKiss",
-    alias: { name: "FaceBlowingKiss", pascal_name: "FaceBlowingKiss" },
     files: [
       { format: "svg", path: "emoji/face-blowing-kiss.svg" }
     ],
@@ -4069,7 +3618,6 @@ export const assets = <const>[
     type: "emoji",
     name: "face-steam-from-nose",
     pascal_name: "FaceSteamFromNose",
-    alias: { name: "FaceSteamFromNose", pascal_name: "FaceSteamFromNose" },
     files: [
       { format: "svg", path: "emoji/face-steam-from-nose.svg" }
     ],
@@ -4078,7 +3626,6 @@ export const assets = <const>[
     type: "emoji",
     name: "face-tears-joy",
     pascal_name: "FaceTearsJoy",
-    alias: { name: "FaceTearsJoy", pascal_name: "FaceTearsJoy" },
     files: [
       { format: "svg", path: "emoji/face-tears-joy.svg" }
     ],
@@ -4087,7 +3634,6 @@ export const assets = <const>[
     type: "emoji",
     name: "grinning-cat",
     pascal_name: "GrinningCat",
-    alias: { name: "GrinningCat", pascal_name: "GrinningCat" },
     files: [
       { format: "svg", path: "emoji/grinning-cat.svg" }
     ],
@@ -4096,7 +3642,6 @@ export const assets = <const>[
     type: "emoji",
     name: "grinning-face-sweat",
     pascal_name: "GrinningFaceSweat",
-    alias: { name: "GrinningFaceSweat", pascal_name: "GrinningFaceSweat" },
     files: [
       { format: "svg", path: "emoji/grinning-face-sweat.svg" }
     ],
@@ -4105,7 +3650,6 @@ export const assets = <const>[
     type: "emoji",
     name: "heart-arrow",
     pascal_name: "HeartArrow",
-    alias: { name: "HeartArrow", pascal_name: "HeartArrow" },
     files: [
       { format: "svg", path: "emoji/heart-arrow.svg" }
     ],
@@ -4114,7 +3658,6 @@ export const assets = <const>[
     type: "emoji",
     name: "hundred-points",
     pascal_name: "HundredPoints",
-    alias: { name: "HundredPoints", pascal_name: "HundredPoints" },
     files: [
       { format: "svg", path: "emoji/hundred-points.svg" }
     ],
@@ -4123,7 +3666,6 @@ export const assets = <const>[
     type: "emoji",
     name: "loudly-crying-face",
     pascal_name: "LoudlyCryingFace",
-    alias: { name: "LoudlyCryingFace", pascal_name: "LoudlyCryingFace" },
     files: [
       { format: "svg", path: "emoji/loudly-crying-face.svg" }
     ],
@@ -4132,7 +3674,6 @@ export const assets = <const>[
     type: "emoji",
     name: "red-heart",
     pascal_name: "RedHeart",
-    alias: { name: "RedHeart", pascal_name: "RedHeart" },
     files: [
       { format: "svg", path: "emoji/red-heart.svg" }
     ],
@@ -4141,7 +3682,6 @@ export const assets = <const>[
     type: "emoji",
     name: "robot-emoji",
     pascal_name: "RobotEmoji",
-    alias: { name: "RobotEmoji", pascal_name: "RobotEmoji" },
     files: [
       { format: "svg", path: "emoji/robot-emoji.svg" }
     ],
@@ -4150,7 +3690,6 @@ export const assets = <const>[
     type: "emoji",
     name: "see-monkey",
     pascal_name: "SeeMonkey",
-    alias: { name: "SeeMonkey", pascal_name: "SeeMonkey" },
     files: [
       { format: "svg", path: "emoji/see-monkey.svg" }
     ],
@@ -4159,7 +3698,6 @@ export const assets = <const>[
     type: "emoji",
     name: "skull-crossbones",
     pascal_name: "SkullCrossbones",
-    alias: { name: "SkullCrossbones", pascal_name: "SkullCrossbones" },
     files: [
       { format: "svg", path: "emoji/skull-crossbones.svg" }
     ],
@@ -4168,7 +3706,6 @@ export const assets = <const>[
     type: "emoji",
     name: "smiling-face-hearts",
     pascal_name: "SmilingFaceHearts",
-    alias: { name: "SmilingFaceHearts", pascal_name: "SmilingFaceHearts" },
     files: [
       { format: "svg", path: "emoji/smiling-face-hearts.svg" }
     ],
@@ -4177,7 +3714,6 @@ export const assets = <const>[
     type: "emoji",
     name: "smiling-face-horns",
     pascal_name: "SmilingFaceHorns",
-    alias: { name: "SmilingFaceHorns", pascal_name: "SmilingFaceHorns" },
     files: [
       { format: "svg", path: "emoji/smiling-face-horns.svg" }
     ],
@@ -4186,7 +3722,6 @@ export const assets = <const>[
     type: "emoji",
     name: "smiling-face-sunglasses",
     pascal_name: "SmilingFaceSunglasses",
-    alias: { name: "SmilingFaceSunglasses", pascal_name: "SmilingFaceSunglasses" },
     files: [
       { format: "svg", path: "emoji/smiling-face-sunglasses.svg" }
     ],
@@ -4195,7 +3730,6 @@ export const assets = <const>[
     type: "emoji",
     name: "snowflake-emoji",
     pascal_name: "SnowflakeEmoji",
-    alias: { name: "SnowflakeEmoji", pascal_name: "SnowflakeEmoji" },
     files: [
       { format: "svg", path: "emoji/snowflake-emoji.svg" }
     ],
@@ -4212,7 +3746,6 @@ export const assets = <const>[
     type: "emoji",
     name: "umbrella-emoji",
     pascal_name: "UmbrellaEmoji",
-    alias: { name: "UmbrellaEmoji", pascal_name: "UmbrellaEmoji" },
     files: [
       { format: "svg", path: "emoji/umbrella-emoji.svg" }
     ],
@@ -4221,7 +3754,6 @@ export const assets = <const>[
     type: "emoji",
     name: "winking-face",
     pascal_name: "WinkingFace",
-    alias: { name: "WinkingFace", pascal_name: "WinkingFace" },
     files: [
       { format: "svg", path: "emoji/winking-face.svg" }
     ],
@@ -4230,7 +3762,6 @@ export const assets = <const>[
     type: "emoji",
     name: "winking-face-tongue",
     pascal_name: "WinkingFaceTongue",
-    alias: { name: "WinkingFaceTongue", pascal_name: "WinkingFaceTongue" },
     files: [
       { format: "svg", path: "emoji/winking-face-tongue.svg" }
     ],
@@ -4247,12 +3778,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-01",
     pascal_name: "Illustration01",
-    alias: { name: "Illustration01", pascal_name: "Illustration01" },
     files: [
-      { format: "png", path: "illustrations/illustration-01-160.png" },
-      { format: "png", path: "illustrations/illustration-01-320.png" },
-      { format: "png", path: "illustrations/illustration-01-640.png" },
-      { format: "png", path: "illustrations/illustration-01-1024.png" },
       { format: "png", path: "illustrations/illustration-01.png" }
     ],
   },
@@ -4292,12 +3818,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-02",
     pascal_name: "Illustration02",
-    alias: { name: "Illustration02", pascal_name: "Illustration02" },
     files: [
-      { format: "png", path: "illustrations/illustration-02-160.png" },
-      { format: "png", path: "illustrations/illustration-02-320.png" },
-      { format: "png", path: "illustrations/illustration-02-640.png" },
-      { format: "png", path: "illustrations/illustration-02-1024.png" },
       { format: "png", path: "illustrations/illustration-02.png" }
     ],
   },
@@ -4337,12 +3858,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-03",
     pascal_name: "Illustration03",
-    alias: { name: "Illustration03", pascal_name: "Illustration03" },
     files: [
-      { format: "png", path: "illustrations/illustration-03-160.png" },
-      { format: "png", path: "illustrations/illustration-03-320.png" },
-      { format: "png", path: "illustrations/illustration-03-640.png" },
-      { format: "png", path: "illustrations/illustration-03-1024.png" },
       { format: "png", path: "illustrations/illustration-03.png" }
     ],
   },
@@ -4382,12 +3898,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-04",
     pascal_name: "Illustration04",
-    alias: { name: "Illustration04", pascal_name: "Illustration04" },
     files: [
-      { format: "png", path: "illustrations/illustration-04-160.png" },
-      { format: "png", path: "illustrations/illustration-04-320.png" },
-      { format: "png", path: "illustrations/illustration-04-640.png" },
-      { format: "png", path: "illustrations/illustration-04-1024.png" },
       { format: "png", path: "illustrations/illustration-04.png" }
     ],
   },
@@ -4427,12 +3938,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-05",
     pascal_name: "Illustration05",
-    alias: { name: "Illustration05", pascal_name: "Illustration05" },
     files: [
-      { format: "png", path: "illustrations/illustration-05-160.png" },
-      { format: "png", path: "illustrations/illustration-05-320.png" },
-      { format: "png", path: "illustrations/illustration-05-640.png" },
-      { format: "png", path: "illustrations/illustration-05-1024.png" },
       { format: "png", path: "illustrations/illustration-05.png" }
     ],
   },
@@ -4472,12 +3978,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-06",
     pascal_name: "Illustration06",
-    alias: { name: "Illustration06", pascal_name: "Illustration06" },
     files: [
-      { format: "png", path: "illustrations/illustration-06-160.png" },
-      { format: "png", path: "illustrations/illustration-06-320.png" },
-      { format: "png", path: "illustrations/illustration-06-640.png" },
-      { format: "png", path: "illustrations/illustration-06-1024.png" },
       { format: "png", path: "illustrations/illustration-06.png" }
     ],
   },
@@ -4517,12 +4018,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-07",
     pascal_name: "Illustration07",
-    alias: { name: "Illustration07", pascal_name: "Illustration07" },
     files: [
-      { format: "png", path: "illustrations/illustration-07-160.png" },
-      { format: "png", path: "illustrations/illustration-07-320.png" },
-      { format: "png", path: "illustrations/illustration-07-640.png" },
-      { format: "png", path: "illustrations/illustration-07-1024.png" },
       { format: "png", path: "illustrations/illustration-07.png" }
     ],
   },
@@ -4562,12 +4058,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-08",
     pascal_name: "Illustration08",
-    alias: { name: "Illustration08", pascal_name: "Illustration08" },
     files: [
-      { format: "png", path: "illustrations/illustration-08-160.png" },
-      { format: "png", path: "illustrations/illustration-08-320.png" },
-      { format: "png", path: "illustrations/illustration-08-640.png" },
-      { format: "png", path: "illustrations/illustration-08-1024.png" },
       { format: "png", path: "illustrations/illustration-08.png" }
     ],
   },
@@ -4607,12 +4098,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-09",
     pascal_name: "Illustration09",
-    alias: { name: "Illustration09", pascal_name: "Illustration09" },
     files: [
-      { format: "png", path: "illustrations/illustration-09-160.png" },
-      { format: "png", path: "illustrations/illustration-09-320.png" },
-      { format: "png", path: "illustrations/illustration-09-640.png" },
-      { format: "png", path: "illustrations/illustration-09-1024.png" },
       { format: "png", path: "illustrations/illustration-09.png" }
     ],
   },
@@ -4652,12 +4138,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-10",
     pascal_name: "Illustration10",
-    alias: { name: "Illustration10", pascal_name: "Illustration10" },
     files: [
-      { format: "png", path: "illustrations/illustration-10-160.png" },
-      { format: "png", path: "illustrations/illustration-10-320.png" },
-      { format: "png", path: "illustrations/illustration-10-640.png" },
-      { format: "png", path: "illustrations/illustration-10-1024.png" },
       { format: "png", path: "illustrations/illustration-10.png" }
     ],
   },
@@ -4697,12 +4178,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-11",
     pascal_name: "Illustration11",
-    alias: { name: "Illustration11", pascal_name: "Illustration11" },
     files: [
-      { format: "png", path: "illustrations/illustration-11-160.png" },
-      { format: "png", path: "illustrations/illustration-11-320.png" },
-      { format: "png", path: "illustrations/illustration-11-640.png" },
-      { format: "png", path: "illustrations/illustration-11-1024.png" },
       { format: "png", path: "illustrations/illustration-11.png" }
     ],
   },
@@ -4742,12 +4218,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-12",
     pascal_name: "Illustration12",
-    alias: { name: "Illustration12", pascal_name: "Illustration12" },
     files: [
-      { format: "png", path: "illustrations/illustration-12-160.png" },
-      { format: "png", path: "illustrations/illustration-12-320.png" },
-      { format: "png", path: "illustrations/illustration-12-640.png" },
-      { format: "png", path: "illustrations/illustration-12-1024.png" },
       { format: "png", path: "illustrations/illustration-12.png" }
     ],
   },
@@ -4787,12 +4258,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-13",
     pascal_name: "Illustration13",
-    alias: { name: "Illustration13", pascal_name: "Illustration13" },
     files: [
-      { format: "png", path: "illustrations/illustration-13-160.png" },
-      { format: "png", path: "illustrations/illustration-13-320.png" },
-      { format: "png", path: "illustrations/illustration-13-640.png" },
-      { format: "png", path: "illustrations/illustration-13-1024.png" },
       { format: "png", path: "illustrations/illustration-13.png" }
     ],
   },
@@ -4832,12 +4298,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-14",
     pascal_name: "Illustration14",
-    alias: { name: "Illustration14", pascal_name: "Illustration14" },
     files: [
-      { format: "png", path: "illustrations/illustration-14-160.png" },
-      { format: "png", path: "illustrations/illustration-14-320.png" },
-      { format: "png", path: "illustrations/illustration-14-640.png" },
-      { format: "png", path: "illustrations/illustration-14-1024.png" },
       { format: "png", path: "illustrations/illustration-14.png" }
     ],
   },
@@ -4877,12 +4338,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-15",
     pascal_name: "Illustration15",
-    alias: { name: "Illustration15", pascal_name: "Illustration15" },
     files: [
-      { format: "png", path: "illustrations/illustration-15-160.png" },
-      { format: "png", path: "illustrations/illustration-15-320.png" },
-      { format: "png", path: "illustrations/illustration-15-640.png" },
-      { format: "png", path: "illustrations/illustration-15-1024.png" },
       { format: "png", path: "illustrations/illustration-15.png" }
     ],
   },
@@ -4922,12 +4378,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-16",
     pascal_name: "Illustration16",
-    alias: { name: "Illustration16", pascal_name: "Illustration16" },
     files: [
-      { format: "png", path: "illustrations/illustration-16-160.png" },
-      { format: "png", path: "illustrations/illustration-16-320.png" },
-      { format: "png", path: "illustrations/illustration-16-640.png" },
-      { format: "png", path: "illustrations/illustration-16-1024.png" },
       { format: "png", path: "illustrations/illustration-16.png" }
     ],
   },
@@ -4967,12 +4418,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-17",
     pascal_name: "Illustration17",
-    alias: { name: "Illustration17", pascal_name: "Illustration17" },
     files: [
-      { format: "png", path: "illustrations/illustration-17-160.png" },
-      { format: "png", path: "illustrations/illustration-17-320.png" },
-      { format: "png", path: "illustrations/illustration-17-640.png" },
-      { format: "png", path: "illustrations/illustration-17-1024.png" },
       { format: "png", path: "illustrations/illustration-17.png" }
     ],
   },
@@ -5012,12 +4458,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-18",
     pascal_name: "Illustration18",
-    alias: { name: "Illustration18", pascal_name: "Illustration18" },
     files: [
-      { format: "png", path: "illustrations/illustration-18-160.png" },
-      { format: "png", path: "illustrations/illustration-18-320.png" },
-      { format: "png", path: "illustrations/illustration-18-640.png" },
-      { format: "png", path: "illustrations/illustration-18-1024.png" },
       { format: "png", path: "illustrations/illustration-18.png" }
     ],
   },
@@ -5057,12 +4498,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-19",
     pascal_name: "Illustration19",
-    alias: { name: "Illustration19", pascal_name: "Illustration19" },
     files: [
-      { format: "png", path: "illustrations/illustration-19-160.png" },
-      { format: "png", path: "illustrations/illustration-19-320.png" },
-      { format: "png", path: "illustrations/illustration-19-640.png" },
-      { format: "png", path: "illustrations/illustration-19-1024.png" },
       { format: "png", path: "illustrations/illustration-19.png" }
     ],
   },
@@ -5102,12 +4538,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-20",
     pascal_name: "Illustration20",
-    alias: { name: "Illustration20", pascal_name: "Illustration20" },
     files: [
-      { format: "png", path: "illustrations/illustration-20-160.png" },
-      { format: "png", path: "illustrations/illustration-20-320.png" },
-      { format: "png", path: "illustrations/illustration-20-640.png" },
-      { format: "png", path: "illustrations/illustration-20-1024.png" },
       { format: "png", path: "illustrations/illustration-20.png" }
     ],
   },
@@ -5147,12 +4578,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-21",
     pascal_name: "Illustration21",
-    alias: { name: "Illustration21", pascal_name: "Illustration21" },
     files: [
-      { format: "png", path: "illustrations/illustration-21-160.png" },
-      { format: "png", path: "illustrations/illustration-21-320.png" },
-      { format: "png", path: "illustrations/illustration-21-640.png" },
-      { format: "png", path: "illustrations/illustration-21-1024.png" },
       { format: "png", path: "illustrations/illustration-21.png" }
     ],
   },
@@ -5192,12 +4618,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-22",
     pascal_name: "Illustration22",
-    alias: { name: "Illustration22", pascal_name: "Illustration22" },
     files: [
-      { format: "png", path: "illustrations/illustration-22-160.png" },
-      { format: "png", path: "illustrations/illustration-22-320.png" },
-      { format: "png", path: "illustrations/illustration-22-640.png" },
-      { format: "png", path: "illustrations/illustration-22-1024.png" },
       { format: "png", path: "illustrations/illustration-22.png" }
     ],
   },
@@ -5237,12 +4658,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-23",
     pascal_name: "Illustration23",
-    alias: { name: "Illustration23", pascal_name: "Illustration23" },
     files: [
-      { format: "png", path: "illustrations/illustration-23-160.png" },
-      { format: "png", path: "illustrations/illustration-23-320.png" },
-      { format: "png", path: "illustrations/illustration-23-640.png" },
-      { format: "png", path: "illustrations/illustration-23-1024.png" },
       { format: "png", path: "illustrations/illustration-23.png" }
     ],
   },
@@ -5282,12 +4698,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-24",
     pascal_name: "Illustration24",
-    alias: { name: "Illustration24", pascal_name: "Illustration24" },
     files: [
-      { format: "png", path: "illustrations/illustration-24-160.png" },
-      { format: "png", path: "illustrations/illustration-24-320.png" },
-      { format: "png", path: "illustrations/illustration-24-640.png" },
-      { format: "png", path: "illustrations/illustration-24-1024.png" },
       { format: "png", path: "illustrations/illustration-24.png" }
     ],
   },
@@ -5327,12 +4738,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-25",
     pascal_name: "Illustration25",
-    alias: { name: "Illustration25", pascal_name: "Illustration25" },
     files: [
-      { format: "png", path: "illustrations/illustration-25-160.png" },
-      { format: "png", path: "illustrations/illustration-25-320.png" },
-      { format: "png", path: "illustrations/illustration-25-640.png" },
-      { format: "png", path: "illustrations/illustration-25-1024.png" },
       { format: "png", path: "illustrations/illustration-25.png" }
     ],
   },
@@ -5372,12 +4778,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-26",
     pascal_name: "Illustration26",
-    alias: { name: "Illustration26", pascal_name: "Illustration26" },
     files: [
-      { format: "png", path: "illustrations/illustration-26-160.png" },
-      { format: "png", path: "illustrations/illustration-26-320.png" },
-      { format: "png", path: "illustrations/illustration-26-640.png" },
-      { format: "png", path: "illustrations/illustration-26-1024.png" },
       { format: "png", path: "illustrations/illustration-26.png" }
     ],
   },
@@ -5417,12 +4818,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-27",
     pascal_name: "Illustration27",
-    alias: { name: "Illustration27", pascal_name: "Illustration27" },
     files: [
-      { format: "png", path: "illustrations/illustration-27-160.png" },
-      { format: "png", path: "illustrations/illustration-27-320.png" },
-      { format: "png", path: "illustrations/illustration-27-640.png" },
-      { format: "png", path: "illustrations/illustration-27-1024.png" },
       { format: "png", path: "illustrations/illustration-27.png" }
     ],
   },
@@ -5462,12 +4858,7 @@ export const assets = <const>[
     type: "illustrations",
     name: "illustration-28",
     pascal_name: "Illustration28",
-    alias: { name: "Illustration28", pascal_name: "Illustration28" },
     files: [
-      { format: "png", path: "illustrations/illustration-28-160.png" },
-      { format: "png", path: "illustrations/illustration-28-320.png" },
-      { format: "png", path: "illustrations/illustration-28-640.png" },
-      { format: "png", path: "illustrations/illustration-28-1024.png" },
       { format: "png", path: "illustrations/illustration-28.png" }
     ],
   },
@@ -5507,7 +4898,6 @@ export const assets = <const>[
     type: "illustrations",
     name: "line-drawing-01",
     pascal_name: "LineDrawing01",
-    alias: { name: "LineDrawing01", pascal_name: "LineDrawing01" },
     files: [
       { format: "svg", path: "illustrations/line-drawing-01.svg" }
     ],
@@ -5516,7 +4906,6 @@ export const assets = <const>[
     type: "illustrations",
     name: "line-drawing-02",
     pascal_name: "LineDrawing02",
-    alias: { name: "LineDrawing02", pascal_name: "LineDrawing02" },
     files: [
       { format: "svg", path: "illustrations/line-drawing-02.svg" }
     ],
@@ -5525,7 +4914,6 @@ export const assets = <const>[
     type: "illustrations",
     name: "line-drawing-03",
     pascal_name: "LineDrawing03",
-    alias: { name: "LineDrawing03", pascal_name: "LineDrawing03" },
     files: [
       { format: "svg", path: "illustrations/line-drawing-03.svg" }
     ],
@@ -5534,7 +4922,6 @@ export const assets = <const>[
     type: "illustrations",
     name: "qr-code-big",
     pascal_name: "QrCodeBig",
-    alias: { name: "QrCodeBig", pascal_name: "QrCodeBig" },
     files: [
       { format: "svg", path: "illustrations/qr-code-big.svg" }
     ],
@@ -5551,12 +4938,7 @@ export const assets = <const>[
     type: "images",
     name: "image-01",
     pascal_name: "Image01",
-    alias: { name: "Image01", pascal_name: "Image01" },
     files: [
-      { format: "png", path: "images/image-01-160.png" },
-      { format: "png", path: "images/image-01-320.png" },
-      { format: "png", path: "images/image-01-640.png" },
-      { format: "png", path: "images/image-01-1024.png" },
       { format: "png", path: "images/image-01.png" }
     ],
   },
@@ -5604,7 +4986,6 @@ export const assets = <const>[
     type: "logos",
     name: "app-store",
     pascal_name: "AppStore",
-    alias: { name: "AppStore", pascal_name: "AppStore" },
     files: [
       { format: "svg", path: "logos/app-store.svg" }
     ],
@@ -5621,7 +5002,6 @@ export const assets = <const>[
     type: "logos",
     name: "apple-intelligence-2a",
     pascal_name: "AppleIntelligence2a",
-    alias: { name: "AppleIntelligence2a", pascal_name: "AppleIntelligence2a" },
     files: [
       { format: "svg", path: "logos/apple-intelligence-2a.svg" }
     ],
@@ -5630,7 +5010,6 @@ export const assets = <const>[
     type: "logos",
     name: "apple-intelligence-2b",
     pascal_name: "AppleIntelligence2b",
-    alias: { name: "AppleIntelligence2b", pascal_name: "AppleIntelligence2b" },
     files: [
       { format: "svg", path: "logos/apple-intelligence-2b.svg" }
     ],
@@ -5639,7 +5018,6 @@ export const assets = <const>[
     type: "logos",
     name: "apple-intelligence-a",
     pascal_name: "AppleIntelligenceA",
-    alias: { name: "AppleIntelligenceA", pascal_name: "AppleIntelligenceA" },
     files: [
       { format: "svg", path: "logos/apple-intelligence-a.svg" }
     ],
@@ -5648,7 +5026,6 @@ export const assets = <const>[
     type: "logos",
     name: "apple-intelligence-b",
     pascal_name: "AppleIntelligenceB",
-    alias: { name: "AppleIntelligenceB", pascal_name: "AppleIntelligenceB" },
     files: [
       { format: "svg", path: "logos/apple-intelligence-b.svg" }
     ],
@@ -5673,7 +5050,6 @@ export const assets = <const>[
     type: "logos",
     name: "chat-gpt",
     pascal_name: "ChatGpt",
-    alias: { name: "ChatGPT", pascal_name: "ChatGpt" },
     files: [
       { format: "svg", path: "logos/chat-gpt.svg" }
     ],
@@ -5738,7 +5114,6 @@ export const assets = <const>[
     type: "logos",
     name: "figma-a",
     pascal_name: "FigmaA",
-    alias: { name: "FigmaA", pascal_name: "FigmaA" },
     files: [
       { format: "svg", path: "logos/figma-a.svg" }
     ],
@@ -5747,7 +5122,6 @@ export const assets = <const>[
     type: "logos",
     name: "figma-b",
     pascal_name: "FigmaB",
-    alias: { name: "FigmaB", pascal_name: "FigmaB" },
     files: [
       { format: "svg", path: "logos/figma-b.svg" }
     ],
@@ -5788,7 +5162,6 @@ export const assets = <const>[
     type: "logos",
     name: "google-drive",
     pascal_name: "GoogleDrive",
-    alias: { name: "GoogleDrive", pascal_name: "GoogleDrive" },
     files: [
       { format: "svg", path: "logos/google-drive.svg" }
     ],
@@ -5797,7 +5170,6 @@ export const assets = <const>[
     type: "logos",
     name: "google-play",
     pascal_name: "GooglePlay",
-    alias: { name: "GooglePlay", pascal_name: "GooglePlay" },
     files: [
       { format: "svg", path: "logos/google-play.svg" }
     ],
@@ -5822,7 +5194,6 @@ export const assets = <const>[
     type: "logos",
     name: "i-cloud",
     pascal_name: "ICloud",
-    alias: { name: "iCloud", pascal_name: "ICloud" },
     files: [
       { format: "svg", path: "logos/i-cloud.svg" }
     ],
@@ -5839,7 +5210,6 @@ export const assets = <const>[
     type: "logos",
     name: "lemon-squeezy",
     pascal_name: "LemonSqueezy",
-    alias: { name: "LemonSqueezy", pascal_name: "LemonSqueezy" },
     files: [
       { format: "svg", path: "logos/lemon-squeezy.svg" }
     ],
@@ -5848,7 +5218,6 @@ export const assets = <const>[
     type: "logos",
     name: "linked-in",
     pascal_name: "LinkedIn",
-    alias: { name: "LinkedIN", pascal_name: "LinkedIn" },
     files: [
       { format: "svg", path: "logos/linked-in.svg" }
     ],
@@ -5929,7 +5298,6 @@ export const assets = <const>[
     type: "logos",
     name: "one-drive",
     pascal_name: "OneDrive",
-    alias: { name: "OneDrive", pascal_name: "OneDrive" },
     files: [
       { format: "svg", path: "logos/one-drive.svg" }
     ],
@@ -5938,7 +5306,6 @@ export const assets = <const>[
     type: "logos",
     name: "one-note",
     pascal_name: "OneNote",
-    alias: { name: "OneNote", pascal_name: "OneNote" },
     files: [
       { format: "svg", path: "logos/one-note.svg" }
     ],
@@ -5947,7 +5314,6 @@ export const assets = <const>[
     type: "logos",
     name: "pay-pal",
     pascal_name: "PayPal",
-    alias: { name: "PayPal", pascal_name: "PayPal" },
     files: [
       { format: "svg", path: "logos/pay-pal.svg" }
     ],
@@ -5972,7 +5338,6 @@ export const assets = <const>[
     type: "logos",
     name: "power-point",
     pascal_name: "PowerPoint",
-    alias: { name: "PowerPoint", pascal_name: "PowerPoint" },
     files: [
       { format: "svg", path: "logos/power-point.svg" }
     ],
@@ -5989,7 +5354,6 @@ export const assets = <const>[
     type: "logos",
     name: "rss-logo",
     pascal_name: "RssLogo",
-    alias: { name: "RssLogo", pascal_name: "RssLogo" },
     files: [
       { format: "svg", path: "logos/rss-logo.svg" }
     ],
@@ -6014,7 +5378,6 @@ export const assets = <const>[
     type: "logos",
     name: "snow-logo",
     pascal_name: "SnowLogo",
-    alias: { name: "SnowLogo", pascal_name: "SnowLogo" },
     files: [
       { format: "svg", path: "logos/snow-logo.svg" }
     ],
@@ -6047,7 +5410,6 @@ export const assets = <const>[
     type: "logos",
     name: "tik-tok",
     pascal_name: "TikTok",
-    alias: { name: "TikTok", pascal_name: "TikTok" },
     files: [
       { format: "svg", path: "logos/tik-tok.svg" }
     ],
@@ -6080,7 +5442,6 @@ export const assets = <const>[
     type: "logos",
     name: "whats-app",
     pascal_name: "WhatsApp",
-    alias: { name: "WhatsApp", pascal_name: "WhatsApp" },
     files: [
       { format: "svg", path: "logos/whats-app.svg" }
     ],
