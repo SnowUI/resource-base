@@ -1,8 +1,8 @@
-# @snowui-design-system/resource-core
+# @snowui-design-system/resource-base
 
 <div align="center">
 
-**Core resource package for SnowUI Design System - Asset processing and management**
+**Base resource package for SnowUI Design System - Asset processing and management**
 
 [English](#english) | [中文](#中文)
 
@@ -12,7 +12,7 @@
 
 ## English
 
-`@snowui-design-system/resource-core` is the core resource package for SnowUI Design System, responsible for unified management and processing of all design assets (icons, avatars, backgrounds, cursors, etc.).
+`@snowui-design-system/resource-base` is the base resource package for SnowUI Design System, responsible for unified management and processing of all design assets (icons, avatars, backgrounds, cursors, etc.).
 
 ### ✨ Key Features
 
@@ -34,15 +34,15 @@
 #### Installation
 
 ```bash
-npm install @snowui-design-system/resource-core
+npm install @snowui-design-system/resource-base
 # or
-pnpm add @snowui-design-system/resource-core
+pnpm add @snowui-design-system/resource-base
 ```
 
 #### Usage
 
 ```typescript
-import { icons, assets, findIcon, findAsset } from '@snowui-design-system/resource-core';
+import { icons, assets, findIcon, findAsset } from '@snowui-design-system/resource-base';
 
 // Get all icons
 console.log(icons);
@@ -60,11 +60,11 @@ console.log(asset?.type); // 'avatars'
 
 ```typescript
 // Import icon SVG
-import iconSvg from '@snowui-design-system/resource-core/assets/icons/regular/four-leaf-clover-regular.svg';
+import iconSvg from '@snowui-design-system/resource-base/assets/icons/regular/four-leaf-clover-regular.svg';
 
 // Import assets
-import avatar from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind.png';
-import background from '@snowui-design-system/resource-core/assets/backgrounds/gradient-01.jpg';
+import avatar from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind.png';
+import background from '@snowui-design-system/resource-base/assets/backgrounds/gradient-01.jpg';
 ```
 
 ### 🛠️ Processing Assets
@@ -148,7 +148,7 @@ MIT
 
 ## 中文
 
-`@snowui-design-system/resource-core` 是 SnowUI 设计资源核心包，负责统一管理和处理所有设计素材（图标、头像、背景、光标等）。
+`@snowui-design-system/resource-base` 是 SnowUI 设计资基础包，负责统一管理和处理所有设计素材（图标、头像、背景、光标等）。
 
 ### ✨ 核心特性
 
@@ -170,15 +170,15 @@ MIT
 #### 安装
 
 ```bash
-npm install @snowui-design-system/resource-core
+npm install @snowui-design-system/resource-base
 # 或
-pnpm add @snowui-design-system/resource-core
+pnpm add @snowui-design-system/resource-base
 ```
 
 #### 使用
 
 ```typescript
-import { icons, assets, findIcon, findAsset } from '@snowui-design-system/resource-core';
+import { icons, assets, findIcon, findAsset } from '@snowui-design-system/resource-base';
 
 // 获取所有图标
 console.log(icons);
@@ -196,11 +196,11 @@ console.log(asset?.type); // 'avatars'
 
 ```typescript
 // 导入图标 SVG
-import iconSvg from '@snowui-design-system/resource-core/assets/icons/regular/four-leaf-clover-regular.svg';
+import iconSvg from '@snowui-design-system/resource-base/assets/icons/regular/four-leaf-clover-regular.svg';
 
 // 导入素材
-import avatar from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind.png';
-import background from '@snowui-design-system/resource-core/assets/backgrounds/gradient-01.jpg';
+import avatar from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind.png';
+import background from '@snowui-design-system/resource-base/assets/backgrounds/gradient-01.jpg';
 ```
 
 ### 🛠️ 处理素材
