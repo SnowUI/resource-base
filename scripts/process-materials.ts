@@ -7,7 +7,7 @@ import { processImageFile, isBitmapFile, resizeImage, resizeImageByWidth } from 
 type MaterialGroup = string;
 
 export interface ProcessMaterialsOptions {
-  /** 资源根目录，默认 resource/core/assets */
+  /** 资源根目录，默认 resource-base/assets */
   baseAssetsDir?: string;
   /** 要处理的素材分组 */
   groups?: MaterialGroup[];

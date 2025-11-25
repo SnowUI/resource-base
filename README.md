@@ -72,7 +72,7 @@ import background from '@snowui-design-system/resource-core/assets/backgrounds/g
 #### Process All Assets
 
 ```bash
-cd resource/core
+cd resource-base
 npm run process
 ```
 
@@ -208,7 +208,7 @@ import background from '@snowui-design-system/resource-core/assets/backgrounds/g
 #### 处理所有素材
 
 ```bash
-cd resource/core
+cd resource-base
 npm run process
 ```
 
