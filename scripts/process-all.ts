@@ -22,25 +22,37 @@ import { updateCatalog } from "./utils/catalog";
 async function main() {
   const dryRun = process.argv.includes("--dry");
   const baseAssetsDir = path.join(__dirname, "..", "assets");
+  const rawAssetsDir = path.join(__dirname, "..", "raw-assets");
 
   console.log("🚀 Starting asset processing...");
   console.log("");
+
+  // Avatar 基础尺寸（1x）
+  const avatarBaseSizes = [16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512];
+  // 扩展 3x 尺寸，并去重排序
+  const avatarSizes = Array.from(
+    new Set([
+      ...avatarBaseSizes,
+      ...avatarBaseSizes.map((s) => s * 3),
+    ])
+  ).sort((a, b) => a - b);
 
   // 步骤 1: 处理 materials（排除 icons）
   console.log("📦 Step 1: Processing materials (avatars, backgrounds, cursors, etc.)");
   console.log("   - Bitmap images (PNG, JPG, etc.): Compressing and generating multiple sizes...");
   console.log("   - SVG files: Copying as-is (no color processing, no size variants)");
-  console.log("   - Avatars: Generating multiple sizes (16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512)...");
+  console.log("   - Avatars: Generating multiple sizes (1x & 3x)");
   console.log("   - Backgrounds: Generating multiple widths (320, 640, 1024, 1920)...");
   console.log("   - Images: Generating multiple widths (160, 320, 640, 1024)...");
   console.log("   - Illustrations: Generating multiple widths (160, 320, 640, 1024)...");
   const materials = await processMaterials({ 
-    baseAssetsDir, 
+    baseAssetsDir,
+    rawAssetsDir,
     dryRun, 
     excludeGroups: ["icons"],
     // Avatars: 正方形尺寸，默认 32x32（仅位图）
     multiSizeGroups: ["avatars"],
-    sizes: [16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512],
+    sizes: avatarSizes,
     // Backgrounds, Images, Illustrations: 宽度固定，高度自适应（仅位图）
     multiWidthGroups: ["backgrounds", "images", "illustrations"],
     // 不同素材类型的宽度配置
