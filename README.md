@@ -4,6 +4,8 @@
 
 **Base resource package for SnowUI Design System - Asset processing and management**
 
+**Repository**: [https://github.com/SnowUI/resource-base](https://github.com/SnowUI/resource-base)
+
 [English](#english) | [中文](#中文)
 
 </div>
@@ -12,22 +14,25 @@
 
 ## English
 
-`@snowui-design-system/resource-base` is the base resource package for SnowUI Design System, responsible for unified management and processing of all design assets (icons, avatars, backgrounds, cursors, etc.).
+`@snowui-design-system/resource-base` is the base resource package for SnowUI Design System, responsible for processing design assets and publishing them as an npm package. It reads raw assets from the `raw-assets` folder, processes them according to predefined rules, and outputs standardized assets with metadata.
 
 ### ✨ Key Features
 
-- **Batch Asset Processing**: Automatically scan, rename, compress, and optimize various asset files
-- **Multi-weight Icons**: Support for regular, thin, light, bold, fill, and duotone weights with color normalization
-- **Smart Asset Sizing**: Automatic multi-size generation for bitmaps
-  - **Avatars**: Square sizes 16×16, 20×20, 24×24, 28×28, 32×32, 40×40, 48×48, 56×56, 64×64, 80×80, 128×128, 256×256, 512×512 (default: 32×32)
+- **Raw Asset Processing**: Reads original assets from `raw-assets` folder and processes them into standardized formats
+- **File Naming Standardization**: Automatically renames all assets to kebab-case format (e.g., `four-leaf-clover-duotone.svg`)
+- **Icon Weight Classification**: Icons are categorized by suffix (`-regular`, `-thin`, `-light`, `-bold`, `-fill`, `-duotone`). Icons without a suffix default to `regular` weight
+  - **Import Path**: `@snowui-design-system/resource-base/assets/icons/{weight}/{name}-{weight}.svg`
+- **Smart Color Processing**: 
+  - Black icons (`#000000`) are converted to `currentColor` for easy CSS styling
+  - Colored icons (containing colors other than black/white) are preserved as original SVG files
+- **Bitmap Compression & Multi-Size Generation**: Automatically compresses bitmaps and generates multiple sizes
+  - **Avatars**: Square sizes 16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536 (includes 1x and 3x variants)
   - **Backgrounds**: Fixed widths 320, 640, 1024, 1920 (default: 1024px, height auto)
   - **Images**: Fixed widths 160, 320, 640, 1024 (default: 320px, height auto)
   - **Illustrations**: Fixed widths 160, 320, 640, 1024 (default: 320px, height auto)
-- **Automatic Size Matching**: Components automatically select the closest available size when a non-standard size is requested
+- **3x Retina Support**: Size definitions correspond to 3x actual image sizes. Components automatically select the closest available size (e.g., requesting `size={31}` will match `96` which is `31 × 3`)
+- **Automatic Metadata Generation**: Automatically generates icon and asset metadata files (`src/icons.ts`, `src/assets.ts`)
 - **Asset Categorization**: Organized by type (avatars, backgrounds, cursors, emoji, icons, illustrations, images, logos)
-- **File Standardization**: Unified naming convention (kebab-case)
-- **Compression & Optimization**: Automatic compression for bitmaps (PNG, JPG, WebP) and SVG files
-- **Metadata Generation**: Automatic generation of icon and asset metadata files
 
 ### 🚀 Quick Start
 
@@ -67,6 +72,29 @@ import avatar from '@snowui-design-system/resource-base/assets/avatars/avatar-by
 import background from '@snowui-design-system/resource-base/assets/backgrounds/gradient-01.jpg';
 ```
 
+#### Using Svelte Components
+
+For Svelte projects, use `@snowui-design-system/resource-svelte` package which provides ready-to-use components:
+
+```svelte
+<script>
+  import { FourLeafClover, Stars, Avatar3d01 } from '@snowui-design-system/resource-svelte';
+</script>
+
+<!-- Icon with different weights -->
+<FourLeafClover size={32} weight="duotone" />
+<FourLeafClover size={32} weight="regular" />
+<FourLeafClover size={32} weight="fill" />
+
+<!-- Avatar with custom size -->
+<Avatar3d01 size={64} />
+
+<!-- Icon with custom class for styling -->
+<Stars size={24} weight="duotone" class="text-blue" />
+```
+
+**Note**: Install `@snowui-design-system/resource-svelte` separately for Svelte component support.
+
 ### 🛠️ Processing Assets
 
 #### Process All Assets
@@ -77,8 +105,11 @@ npm run process
 ```
 
 This will:
+- Read raw assets from `raw-assets` folder
 - Process materials (avatars, backgrounds, etc.) with compression and multi-size generation
-- Process icons with color normalization and optimization
+- Process icons: convert black colors to `currentColor`, preserve colored icons as original files
+- Rename all assets to kebab-case format
+- Categorize icons by weight suffix (defaults to `regular` if no suffix)
 - Generate metadata files (`src/icons.ts`, `src/assets.ts`)
 
 #### Process Materials Only
@@ -103,10 +134,14 @@ npx tsx scripts/process-all.ts --dry
 
 #### Avatars (Square Sizes)
 
-Generated sizes: 16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512  
+Generated sizes: 16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536  
 Default: 32×32
 
-**Note**: Only bitmap files (PNG, JPG, WebP) are processed. SVG files are copied as-is.
+**Note**: 
+- Includes both 1x and 3x variants (e.g., 16, 48, 32, 96, etc.)
+- Size definitions correspond to 3x actual image sizes for retina displays
+- Components automatically select the closest available size (e.g., `size={31}` matches `96` which is `31 × 3`)
+- Only bitmap files (PNG, JPG, WebP) are processed. SVG files are copied as-is.
 
 #### Backgrounds (Fixed Width, Auto Height)
 
@@ -133,7 +168,7 @@ Default: 320px
 
 - **[resource-react](https://github.com/snowui/resource-react)** - React components package
 - **[example](https://github.com/snowui/example)** - Example website
-- **[Live Demo](https://snowui.github.io/example)** - View the example website
+- **[Live Demo](https://snowui.github.io/resource-react-demo/)** - View the example website
 
 ### 📚 Documentation
 
@@ -148,22 +183,25 @@ MIT
 
 ## 中文
 
-`@snowui-design-system/resource-base` 是 SnowUI 设计资基础包，负责统一管理和处理所有设计素材（图标、头像、背景、光标等）。
+`@snowui-design-system/resource-base` 是 SnowUI 设计系统的基础资源包，用于处理设计素材并发布为 npm 包。它从 `raw-assets` 文件夹读取原始素材，按照预定义规则进行处理，并输出标准化的素材和元数据。
 
 ### ✨ 核心特性
 
-- **批量素材处理**：自动扫描、重命名、压缩和优化各类素材文件
-- **多权重图标**：支持 regular、thin、light、bold、fill 和 duotone 权重，并进行颜色标准化处理
-- **智能素材尺寸**：位图自动生成多种尺寸
-  - **头像**：正方形尺寸 16×16, 20×20, 24×24, 28×28, 32×32, 40×40, 48×48, 56×56, 64×64, 80×80, 128×128, 256×256, 512×512（默认：32×32）
+- **原始素材处理**：从 `raw-assets` 文件夹读取原始素材，处理为标准格式
+- **文件命名标准化**：自动将所有素材重命名为 kebab-case 格式（如 `four-leaf-clover-duotone.svg`）
+- **图标权重分类**：图标根据后缀进行分类（`-regular`、`-thin`、`-light`、`-bold`、`-fill`、`-duotone`）。无后缀的图标默认为 `regular` 权重
+  - **引用方式**：`@snowui-design-system/resource-base/assets/icons/{weight}/{name}-{weight}.svg`
+- **智能颜色处理**：
+  - 黑色图标（`#000000`）转换为 `currentColor`，方便通过 CSS 添加颜色样式
+  - 有色图标（包含除黑白色外的其他颜色）保留为原始 SVG 文件
+- **位图压缩与多尺寸生成**：自动压缩位图并生成多种尺寸
+  - **头像**：正方形尺寸 16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536（包含 1x 和 3x 变体）
   - **背景**：固定宽度 320, 640, 1024, 1920（默认：1024px，高度自适应）
   - **图片**：固定宽度 160, 320, 640, 1024（默认：320px，高度自适应）
   - **插画**：固定宽度 160, 320, 640, 1024（默认：320px，高度自适应）
-- **自动尺寸匹配**：当请求非标准尺寸时，组件自动选择最接近的可用尺寸
+- **3x 视网膜支持**：尺寸定义对应 3x 实际大小的图片。组件自动选择最接近的可用尺寸（例如，请求 `size={31}` 会匹配 `96`，即 `31 × 3`）
+- **自动元数据生成**：自动生成图标和素材的元数据文件（`src/icons.ts`、`src/assets.ts`）
 - **素材分类**：按类型组织素材（avatars、backgrounds、cursors、emoji、icons、illustrations、images、logos）
-- **文件标准化**：统一文件命名规范（kebab-case）
-- **压缩优化**：自动压缩位图（PNG、JPG、WebP）和 SVG 文件
-- **元数据生成**：自动生成图标和素材的元数据文件
 
 ### 🚀 快速开始
 
@@ -203,6 +241,29 @@ import avatar from '@snowui-design-system/resource-base/assets/avatars/avatar-by
 import background from '@snowui-design-system/resource-base/assets/backgrounds/gradient-01.jpg';
 ```
 
+#### 使用 Svelte 组件
+
+对于 Svelte 项目，使用 `@snowui-design-system/resource-svelte` 包，它提供了开箱即用的组件：
+
+```svelte
+<script>
+  import { FourLeafClover, Stars, Avatar3d01 } from '@snowui-design-system/resource-svelte';
+</script>
+
+<!-- 不同权重的图标 -->
+<FourLeafClover size={32} weight="duotone" />
+<FourLeafClover size={32} weight="regular" />
+<FourLeafClover size={32} weight="fill" />
+
+<!-- 自定义尺寸的头像 -->
+<Avatar3d01 size={64} />
+
+<!-- 带自定义类名的图标，用于样式控制 -->
+<Stars size={24} weight="duotone" class="text-blue" />
+```
+
+**注意**：需要单独安装 `@snowui-design-system/resource-svelte` 包以使用 Svelte 组件。
+
 ### 🛠️ 处理素材
 
 #### 处理所有素材
@@ -213,8 +274,11 @@ npm run process
 ```
 
 这将：
+- 从 `raw-assets` 文件夹读取原始素材
 - 处理素材（头像、背景等），进行压缩和多尺寸生成
-- 处理图标，进行颜色标准化和优化
+- 处理图标：将黑色转换为 `currentColor`，保留有色图标为原始文件
+- 将所有素材重命名为 kebab-case 格式
+- 根据权重后缀对图标进行分类（无后缀默认为 `regular`）
 - 生成元数据文件（`src/icons.ts`、`src/assets.ts`）
 
 #### 仅处理素材
@@ -239,10 +303,14 @@ npx tsx scripts/process-all.ts --dry
 
 #### 头像（正方形尺寸）
 
-生成的尺寸：16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512  
+生成的尺寸：16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536  
 默认：32×32
 
-**注意**：只处理位图文件（PNG、JPG、WebP）。SVG 文件保持原样。
+**注意**：
+- 包含 1x 和 3x 变体（例如：16, 48, 32, 96 等）
+- 尺寸定义对应 3x 实际大小的图片，用于视网膜显示屏
+- 组件自动选择最接近的可用尺寸（例如：`size={31}` 会匹配 `96`，即 `31 × 3`）
+- 只处理位图文件（PNG、JPG、WebP）。SVG 文件保持原样。
 
 #### 背景（固定宽度，高度自适应）
 
@@ -269,7 +337,7 @@ npx tsx scripts/process-all.ts --dry
 
 - **[resource-react](https://github.com/snowui/resource-react)** - React 组件包
 - **[example](https://github.com/snowui/example)** - 示例网站
-- **[在线演示](https://snowui.github.io/example)** - 查看示例网站
+- **[在线演示](https://snowui.github.io/resource-react-demo/)** - 查看示例网站
 
 ### 📚 文档
 

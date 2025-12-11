@@ -1,7 +1,7 @@
 {
   "name": "@snowui-design-system/resource-base",
   "version": "1.0.24",
-  "description": "SnowUI Design Resource Base - Used for handling design resources such as icons and avatars.",
+  "description": "SnowUI Design Resource Base - Processes design assets from raw-assets folder, converts black icons to currentColor, generates multi-size bitmaps with 3x retina support, and publishes standardized assets with metadata.",
   "license": "MIT",
   "private": false,
   "main": "./src/index.ts",
