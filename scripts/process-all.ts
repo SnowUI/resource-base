@@ -68,7 +68,11 @@ async function main() {
   // 步骤 2: 处理 icons（优先级更高）
   console.log("🎨 Step 2: Processing icons");
   console.log("   - SVG files: Color processing (currentColor) + optimization");
-  const icons = await processIcons({ baseAssetsDir, dryRun });
+  const icons = await processIcons({
+    baseAssetsDir,
+    rawIconsDir: path.join(rawAssetsDir, "icons"),
+    dryRun,
+  });
   console.log(`   ✅ Processed ${icons.length} icon entries`);
   console.log("");
 

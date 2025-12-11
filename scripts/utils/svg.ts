@@ -6,58 +6,46 @@ import { readTextFiles } from "./fs";
  * 这样 SVG 可以通过 CSS 的 color 属性来控制颜色
  */
 export function processSvgColors(svgString: string): string {
-  // 常见的黑色和灰色值，替换为 currentColor
+  // 仅将纯黑 #000000（含可选 alpha ff）替换为 currentColor，避免影响白色/渐变
   const colorMap: Record<string, string> = {
-    "#000": "currentColor",
     "#000000": "currentColor",
-    "rgb(0,0,0)": "currentColor",
-    "rgb(0, 0, 0)": "currentColor",
-    "black": "currentColor",
+    "#000000ff": "currentColor",
   };
 
   let processed = svgString;
 
-  // 替换 fill 属性中的颜色
-  processed = processed.replace(
-    /fill=["']([^"']+)["']/gi,
-    (match, color) => {
-      const normalizedColor = color.trim().toLowerCase();
-      const replacement = colorMap[normalizedColor];
-      if (replacement) {
-        return `fill="${replacement}"`;
-      }
-      return match;
+  // 替换 fill 属性中的颜色（仅匹配 #000000 / #000000ff）
+  processed = processed.replace(/fill=["']([^"']+)["']/gi, (match, color) => {
+    const normalizedColor = color.trim().toLowerCase();
+    const replacement = colorMap[normalizedColor];
+    if (replacement) {
+      return `fill="${replacement}"`;
     }
-  );
+    return match;
+  });
 
-  // 替换 stroke 属性中的颜色
-  processed = processed.replace(
-    /stroke=["']([^"']+)["']/gi,
-    (match, color) => {
-      const normalizedColor = color.trim().toLowerCase();
-      const replacement = colorMap[normalizedColor];
-      if (replacement) {
-        return `stroke="${replacement}"`;
-      }
-      return match;
+  // 替换 stroke 属性中的颜色（仅匹配 #000000 / #000000ff）
+  processed = processed.replace(/stroke=["']([^"']+)["']/gi, (match, color) => {
+    const normalizedColor = color.trim().toLowerCase();
+    const replacement = colorMap[normalizedColor];
+    if (replacement) {
+      return `stroke="${replacement}"`;
     }
-  );
+    return match;
+  });
 
   // 替换 style 属性中的颜色
-  processed = processed.replace(
-    /style=["']([^"']*)["']/gi,
-    (match, styleContent) => {
-      let newStyle = styleContent;
-      for (const [oldColor, newColor] of Object.entries(colorMap)) {
-        const regex = new RegExp(
-          `(fill|stroke):\\s*${oldColor.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`,
-          "gi"
-        );
-        newStyle = newStyle.replace(regex, `$1: ${newColor}`);
-      }
-      return `style="${newStyle}"`;
+  processed = processed.replace(/style=["']([^"']*)["']/gi, (match, styleContent) => {
+    let newStyle = styleContent;
+    for (const [oldColor, newColor] of Object.entries(colorMap)) {
+      const regex = new RegExp(
+        `(fill|stroke):\\s*${oldColor.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&")}(\\b|;|$)`,
+        "gi"
+      );
+      newStyle = newStyle.replace(regex, (_m, prop, tail) => `${prop}: ${newColor}${tail === ";" ? ";" : ""}`);
     }
-  );
+    return `style="${newStyle}"`;
+  });
 
   return processed;
 }
@@ -80,6 +68,8 @@ export async function optimizeSvg(svgString: string): Promise<string> {
               removeViewBox: false,
               // 保留 fill 和 stroke 属性（因为我们需要 currentColor）
               removeUselessStrokeAndFill: false,
+              // 禁止将属性移动到 group，防止 duotone 图标的 opacity 失效
+              moveElemsAttrsToGroup: false,
             },
           },
         },

@@ -9,7 +9,7 @@ type MaterialGroup = string;
 export interface ProcessMaterialsOptions {
   /** 生成输出目录，默认 resource-base/assets */
   baseAssetsDir?: string;
-  /** 原始素材目录，默认 resource-base/raw-assets */
+  /** 原始素材目录，默认 resource-base/raw-assets（必需） */
   rawAssetsDir?: string;
   /** 要处理的素材分组 */
   groups?: MaterialGroup[];
@@ -41,9 +41,7 @@ export interface MaterialOutputEntry {
 const ALLOWED_EXTS = [".svg", ".png", ".jpg", ".jpeg", ".webp"];
 
 export async function processMaterials(options: ProcessMaterialsOptions = {}): Promise<MaterialOutputEntry[]> {
-  // 输出目录：../assets
   const baseAssetsDir = options.baseAssetsDir ?? path.join(__dirname, "..", "assets");
-  // 原始素材目录：../raw-assets
   const rawAssetsDir = options.rawAssetsDir ?? path.join(__dirname, "..", "raw-assets");
 
   // 自动发现 assets 下的一级目录作为分组（如 avatars/backgrounds/cursors/emoji/icons/...）
@@ -63,8 +61,12 @@ export async function processMaterials(options: ProcessMaterialsOptions = {}): P
     if (exclude.has(String(group).toLowerCase())) continue;
     const originalDir = path.join(rawAssetsDir, group);
     const hasOriginal = await fs.access(originalDir).then(() => true).catch(() => false);
+    if (!hasOriginal) {
+      console.warn(`[materials] skip: original directory not found at ${originalDir}`);
+      continue;
+    }
 
-    if (hasOriginal) {
+    {
       const files = await listAssets(originalDir, ALLOWED_EXTS, false);
 
     for (const file of files) {
