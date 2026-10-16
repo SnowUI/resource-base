@@ -38,16 +38,17 @@
     "ux"
   ],
   "scripts": {
-    "process": "tsx scripts/process-all.ts",
-    "process:icons": "tsx scripts/process-icons.ts",
-    "process:materials": "tsx scripts/process-materials.ts",
-    "build:mappings": "tsx scripts/build-mappings.ts",
-    "sync:iconify": "tsx scripts/sync-iconify.ts",
-    "build": "pnpm process && pnpm sync:iconify --mode=auto && pnpm build:mappings && pnpm test:regression",
+    "process": "node --import tsx scripts/process-all.ts",
+    "process:icons": "node --import tsx scripts/process-icons.ts",
+    "process:materials": "node --import tsx scripts/process-materials.ts",
+    "build:mappings": "node --import tsx scripts/build-mappings.ts",
+    "sync:iconify": "node --import tsx scripts/sync-iconify.ts",
+    "build": "pnpm process && pnpm build:mappings && pnpm test:generator && pnpm test:regression",
+    "test:generator": "node --import tsx --test tests/sync-iconify.test.mjs",
     "prepublishOnly": "pnpm build",
-    "scan:usage": "tsx scripts/scan-usage.ts",
-    "check:switch": "tsx scripts/check-switch.ts",
-    "test:regression": "tsx scripts/test-regression.ts"
+    "scan:usage": "node --import tsx scripts/scan-usage.ts",
+    "check:switch": "node --import tsx scripts/check-switch.ts",
+    "test:regression": "node --import tsx scripts/test-regression.ts"
   },
   "devDependencies": {
     "sharp": "^0.33.0",

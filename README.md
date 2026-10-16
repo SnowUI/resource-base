@@ -98,13 +98,12 @@ collections.map((item) => item.id);
 
 ```bash
 pnpm process
-pnpm sync:iconify
 pnpm build:mappings
 pnpm test:regression
 pnpm build
 ```
 
-`pnpm build` 会依次处理素材、同步 Iconify 名称索引、生成映射并运行回归测试。`prepublishOnly` 也会执行完整构建。
+`pnpm build` 会依次处理素材、使用仓库中已审核的 Iconify 名称索引、生成映射并运行回归测试。`prepublishOnly` 也会执行完整构建。更新在线 Iconify 名称时，单独运行 `pnpm sync:iconify`，审核并提交生成的索引；如果任一图标库来源不可用，同步会报错并保留原索引。构建不依赖实时 Iconify API。
 
 ## 切换检查
 
