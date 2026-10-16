@@ -10,7 +10,7 @@ SnowUI 资源基础包，负责处理原始素材、生成公开资源元数据�
 - 稳定使用名：业务侧使用 `usageName`，例如 `arrow-line-right`，不直接绑定某个库的真实文件名。
 - 跨库映射：同一个 `usageName` 可以映射到不同 collection 的 `iconName`。
 - 权重保留：支持 `regular`、`thin`、`light`、`bold`、`fill`、`duotone`，缺失权重时按相似度降级并记录 `degraded`。
-- Iconify 同步：构建时同步在线图标库名称索引，在线 SVG 解析由 `resource-base` 统一封装。
+- Iconify 索引：构建使用仓库已审核的名称快照；更新索引须单独运行 `pnpm sync:iconify`、审核并提交结果。运行时在线 SVG 解析由 `resource-base` 统一封装。
 - 自适应 Logo：单色黑色与视觉近黑色使用 `currentColor`，供框架组件继承页面文字颜色并适配明暗主题。
 - 切换检查：`check:switch` 可扫描项目使用并模拟切换到目标图标库，输出 `matched / degraded / fallback / missing / preserved` 报告。
 
@@ -93,6 +93,8 @@ collections.map((item) => item.id);
 | `weight` | 图标权重 |
 
 新增图标素材时必须登记 `collection`、`sourceName`、`iconName`、`usageName`、`weights`；第三方素材还必须记录授权信息。
+
+当前包混合 SnowUI 自有素材与第三方资源。随包 `THIRD_PARTY_NOTICES.md` 已载明 Phosphor 图标的版权与 MIT 条款；其它素材仍在逐项核对来源与再分发条件，不能把 `package.json` 的整体 `MIT` 字段解释为所有素材均获 MIT 授权。新版本发布前须确定包级和分素材许可。
 
 ## 构建
 
