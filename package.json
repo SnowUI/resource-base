@@ -1,6 +1,6 @@
 {
   "name": "@snowui-design-system/resource-base",
-  "version": "1.0.29",
+  "version": "1.0.30",
   "description": "SnowUI Design Resource Base - Processes design assets from raw-assets folder, converts black icons to currentColor, generates multi-size bitmaps with 3x retina support, and publishes standardized assets with metadata.",
   "license": "SEE LICENSE IN PACKAGE_LICENSE.md",
   "private": false,
