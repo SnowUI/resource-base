@@ -2,7 +2,7 @@
   "name": "@snowui-design-system/resource-base",
   "version": "1.0.29",
   "description": "SnowUI Design Resource Base - Processes design assets from raw-assets folder, converts black icons to currentColor, generates multi-size bitmaps with 3x retina support, and publishes standardized assets with metadata.",
-  "license": "MIT",
+  "license": "SEE LICENSE IN PACKAGE_LICENSE.md",
   "private": false,
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -27,6 +27,9 @@
     "src",
     "assets",
     "README.md",
+    "PACKAGE_LICENSE.md",
+    "RESOURCE_LICENSE_MANIFEST.json",
+    "resource-license-policy.json",
     "THIRD_PARTY_NOTICES.md"
   ],
   "keywords": [
@@ -44,9 +47,12 @@
     "process:materials": "node --import tsx scripts/process-materials.ts",
     "build:mappings": "node --import tsx scripts/build-mappings.ts",
     "sync:iconify": "node --import tsx scripts/sync-iconify.ts",
-    "build": "pnpm process && pnpm build:mappings && pnpm test:generator && pnpm test:regression",
+    "build": "pnpm process && pnpm build:mappings && pnpm license:manifest && pnpm license:check:structure && pnpm test:generator && pnpm test:regression",
+    "license:manifest": "node scripts/resource-license-manifest.mjs",
+    "license:check:structure": "node scripts/resource-license-manifest.mjs --check --structure-only",
+    "license:check": "node scripts/resource-license-manifest.mjs --check --publication",
     "test:generator": "node --import tsx --test tests/sync-iconify.test.mjs",
-    "prepublishOnly": "pnpm build",
+    "prepublishOnly": "pnpm build && pnpm license:check",
     "scan:usage": "node --import tsx scripts/scan-usage.ts",
     "check:switch": "node --import tsx scripts/check-switch.ts",
     "test:regression": "node --import tsx scripts/test-regression.ts"

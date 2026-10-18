@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "collections": {
+    "phosphor": {
+      "source": "Phosphor Icons",
+      "sourceUrl": "https://github.com/phosphor-icons/core",
+      "sourceVersion": null,
+      "rightsEvidence": ["THIRD_PARTY_NOTICES.md"],
+      "applicableLicense": "MIT",
+      "brandMark": false,
+      "unresolved": ["upstream-version-not-pinned"]
+    },
+    "snowui": {
+      "source": "SnowUI",
+      "sourceUrl": null,
+      "sourceVersion": null,
+      "rightsEvidence": [],
+      "applicableLicense": "SnowUI asset license (text pending)",
+      "brandMark": false,
+      "unresolved": ["asset-license-text-missing", "per-asset-rights-evidence-missing"]
+    },
+    "special": {
+      "source": null,
+      "sourceUrl": null,
+      "sourceVersion": null,
+      "rightsEvidence": [],
+      "applicableLicense": null,
+      "brandMark": "review-required",
+      "unresolved": ["source-missing", "source-version-missing", "license-missing", "per-asset-rights-evidence-missing", "brand-review-required"]
+    }
+  },
+  "materialGroups": {
+    "default": {
+      "source": "SnowUI",
+      "sourceUrl": null,
+      "sourceVersion": null,
+      "rightsEvidence": [],
+      "applicableLicense": "SnowUI asset license (text pending)",
+      "brandMark": false,
+      "unresolved": ["asset-license-text-missing", "per-asset-rights-evidence-missing"]
+    },
+    "logos": {
+      "source": null,
+      "sourceUrl": null,
+      "sourceVersion": null,
+      "rightsEvidence": [],
+      "applicableLicense": null,
+      "brandMark": true,
+      "unresolved": ["source-missing", "source-version-missing", "license-missing", "per-asset-rights-evidence-missing", "trademark-review-required"]
+    }
+  }
+}
