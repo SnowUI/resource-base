@@ -38,6 +38,16 @@ const rawFiles = await walk(rawRoot);
 const packagedFiles = await walk(assetsRoot);
 const rawFileHashes = new Map(await Promise.all(rawFiles.map(async absolute => [absolute, await sha256File(absolute)])));
 const packagedFileHashes = new Map(await Promise.all(packagedFiles.map(async absolute => [absolute, await sha256File(absolute)])));
+const sourceSetHash = createHash('sha256')
+  .update(rawFiles.map(absolute => {
+    const relative = posix(path.relative(root, absolute));
+    return `${relative}\0${rawFileHashes.get(absolute)}`;
+  }).sort().join('\n'))
+  .digest('hex');
+if (!policy.ownerConfirmation?.approvedSourceSetSha256 || sourceSetHash !== policy.ownerConfirmation.approvedSourceSetSha256) {
+  console.error(`Owner confirmation does not cover the current raw asset set (actual sha256: ${sourceSetHash}). Obtain a new Owner confirmation before updating the approved hash.`);
+  process.exit(1);
+}
 const grouped = new Map();
 
 for (const absolute of rawFiles) {
@@ -108,7 +118,9 @@ const entries = [...grouped.values()].sort((a, b) => a.id.localeCompare(b.id)).m
       rightsEvidence: [],
       applicableLicense: null,
       brandMark: 'review-required',
-      resolution: { status: 'unresolved', reasons: ['policy-rule-missing'] },
+      ownerConfirmed: false,
+      confirmationRecord: null,
+      resolution: { status: 'unresolved', evidenceBasis: 'none', mappingBasis: 'automated-mapping-verified', reasons: ['policy-rule-missing'] },
     };
   }
   const reasons = [...rule.unresolved];
@@ -120,7 +132,14 @@ const entries = [...grouped.values()].sort((a, b) => a.id.localeCompare(b.id)).m
     rightsEvidence: rule.rightsEvidence,
     applicableLicense: rule.applicableLicense,
     brandMark: rule.brandMark,
-    resolution: { status: reasons.length === 0 ? 'resolved' : 'unresolved', reasons: [...new Set(reasons)].sort() },
+    ownerConfirmed: true,
+    confirmationRecord: policy.ownerConfirmation.record,
+    resolution: {
+      status: reasons.length === 0 ? 'resolved' : 'unresolved',
+      evidenceBasis: 'owner-confirmed',
+      mappingBasis: 'automated-mapping-verified',
+      reasons: [...new Set(reasons)].sort(),
+    },
   };
 });
 
@@ -128,6 +147,7 @@ const unresolved = entries.filter(entry => entry.resolution.status === 'unresolv
 const manifest = {
   schemaVersion: 1,
   package: '@snowui-design-system/resource-base',
+  ownerConfirmation: { record: policy.ownerConfirmation.record, approvedSourceSetSha256: policy.ownerConfirmation.approvedSourceSetSha256, currentSourceSetSha256: sourceSetHash },
   policySha256: createHash('sha256').update(JSON.stringify(policy)).digest('hex'),
   summary: {
     entries: entries.length,

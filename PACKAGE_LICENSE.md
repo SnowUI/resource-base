@@ -1,8 +1,8 @@
 # Package licensing
 
-The runtime processing code in this package is available under the MIT License below. This grant does not cover files under `raw-assets/` or `assets/`.
+The runtime processing code and SnowUI-created assets in this package are available under the MIT License below. Phosphor assets remain under their original MIT License with the full copyright notice in `THIRD_PARTY_NOTICES.md`. Other third-party assets remain under their original Owner-verified licenses; they are not relicensed by this package's MIT grant.
 
-Each bundled asset is governed by the source, evidence, applicable-license and brand fields in `RESOURCE_LICENSE_MANIFEST.json`. An `unresolved` entry is not a license grant and blocks publication until its evidence is completed. Phosphor assets remain subject to `THIRD_PARTY_NOTICES.md`; SnowUI, `special`, Logo and other third-party assets are not relicensed by the code license.
+`OWNER_RESOURCE_LICENSE_CONFIRMATION.md` records the Owner's 2026-10-18 confirmation for the exact raw source set identified by SHA-256. Later additions, deletions, renames, or edits are outside that confirmation until re-approved. `RESOURCE_LICENSE_MANIFEST.json` records Owner confirmation separately from automated mapping verification, preserves unknown source versions as `null`, and retains brand-mark status. An `unresolved` entry remains a publication blocker.
 
 MIT License
 

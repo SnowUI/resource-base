@@ -94,7 +94,7 @@ collections.map((item) => item.id);
 
 新增图标素材时必须登记 `collection`、`sourceName`、`iconName`、`usageName`、`weights`；第三方素材还必须记录授权信息。
 
-当前包混合 SnowUI 自有素材与第三方资源。运行代码采用 `PACKAGE_LICENSE.md` 中的 MIT，素材不随代码重新授权。`RESOURCE_LICENSE_MANIFEST.json` 逐项登记源文件、打包输出、来源、版本、权利证据、适用授权和品牌标记；`Phosphor`、`SnowUI`、`special` 与 Logo 分开判定。未知字段显式标为 `unresolved`，不能把代码许可解释为所有素材均获 MIT 授权。
+当前包混合 SnowUI 自有素材与第三方资源。SnowUI 自有素材采用 MIT；Phosphor 保留原 MIT 与版权声明；其他第三方素材保留 Owner 核实的原许可，不随代码重新授权。`OWNER_RESOURCE_LICENSE_CONFIRMATION.md` 将 Owner 于 2026-10-18 对当前原始素材集合的确认绑定到路径和内容 SHA-256；后续新增或修改必须重新确认。`RESOURCE_LICENSE_MANIFEST.json` 逐项登记源文件、打包输出、来源、版本、权利证据、适用授权和品牌标记，并分别标出 Owner 确认与自动映射核验。未知来源版本保留为 `null`，Logo / 品牌标记继续保留。
 
 ## 构建
 
@@ -106,7 +106,7 @@ pnpm license:check:structure
 pnpm build
 ```
 
-`pnpm build` 会依次处理素材、使用仓库中已审核的 Iconify 名称索引、生成许可清单、核对每个打包文件唯一映射并运行回归测试。`pnpm license:check` 是发布门禁：清单过期、未匹配、重复映射或任一素材缺权利证据都会失败。`prepublishOnly` 会执行完整构建和发布门禁。更新在线 Iconify 名称时，单独运行 `pnpm sync:iconify`，审核并提交生成的索引；如果任一图标库来源不可用，同步会报错并保留原索引。构建不依赖实时 Iconify API。
+`pnpm build` 会依次处理素材、使用仓库中已审核的 Iconify 名称索引、生成许可清单、核对每个打包文件唯一映射并运行回归测试。`pnpm license:check` 是发布门禁：原始素材集合与 Owner 批准 SHA 不一致、清单过期、未匹配或重复映射都会失败。更新或新增素材前须取得 Owner 对新集合的确认；不能只改批准 SHA。`prepublishOnly` 会执行完整构建和发布门禁。更新在线 Iconify 名称时，单独运行 `pnpm sync:iconify`，审核并提交生成的索引；如果任一图标库来源不可用，同步会报错并保留原索引。构建不依赖实时 Iconify API。
 
 ## 切换检查
 

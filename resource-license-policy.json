@@ -1,32 +1,37 @@
 {
   "schemaVersion": 1,
+  "ownerConfirmation": {
+    "record": "OWNER_RESOURCE_LICENSE_CONFIRMATION.md",
+    "approvedSourceSetSha256": "6881d6a490a36a0be35c47d9422a3834e232aafa43f9d637919761a3ff5de3b6",
+    "hashAlgorithm": "sha256(sorted path + NUL + file SHA256, joined by LF)"
+  },
   "collections": {
     "phosphor": {
       "source": "Phosphor Icons",
       "sourceUrl": "https://github.com/phosphor-icons/core",
       "sourceVersion": null,
-      "rightsEvidence": ["THIRD_PARTY_NOTICES.md"],
+      "rightsEvidence": ["OWNER_RESOURCE_LICENSE_CONFIRMATION.md", "THIRD_PARTY_NOTICES.md"],
       "applicableLicense": "MIT",
       "brandMark": false,
-      "unresolved": ["upstream-version-not-pinned"]
+      "unresolved": []
     },
     "snowui": {
       "source": "SnowUI",
       "sourceUrl": null,
       "sourceVersion": null,
-      "rightsEvidence": [],
-      "applicableLicense": "SnowUI asset license (text pending)",
+      "rightsEvidence": ["OWNER_RESOURCE_LICENSE_CONFIRMATION.md"],
+      "applicableLicense": "MIT",
       "brandMark": false,
-      "unresolved": ["asset-license-text-missing", "per-asset-rights-evidence-missing"]
+      "unresolved": []
     },
     "special": {
       "source": null,
       "sourceUrl": null,
       "sourceVersion": null,
-      "rightsEvidence": [],
-      "applicableLicense": null,
+      "rightsEvidence": ["OWNER_RESOURCE_LICENSE_CONFIRMATION.md"],
+      "applicableLicense": "Owner-confirmed original third-party license",
       "brandMark": "review-required",
-      "unresolved": ["source-missing", "source-version-missing", "license-missing", "per-asset-rights-evidence-missing", "brand-review-required"]
+      "unresolved": []
     }
   },
   "materialGroups": {
@@ -34,19 +39,19 @@
       "source": "SnowUI",
       "sourceUrl": null,
       "sourceVersion": null,
-      "rightsEvidence": [],
-      "applicableLicense": "SnowUI asset license (text pending)",
+      "rightsEvidence": ["OWNER_RESOURCE_LICENSE_CONFIRMATION.md"],
+      "applicableLicense": "MIT",
       "brandMark": false,
-      "unresolved": ["asset-license-text-missing", "per-asset-rights-evidence-missing"]
+      "unresolved": []
     },
     "logos": {
       "source": null,
       "sourceUrl": null,
       "sourceVersion": null,
-      "rightsEvidence": [],
-      "applicableLicense": null,
+      "rightsEvidence": ["OWNER_RESOURCE_LICENSE_CONFIRMATION.md"],
+      "applicableLicense": "Owner-confirmed original third-party license",
       "brandMark": true,
-      "unresolved": ["source-missing", "source-version-missing", "license-missing", "per-asset-rights-evidence-missing", "trademark-review-required"]
+      "unresolved": []
     }
   }
 }
